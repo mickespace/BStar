@@ -1,0 +1,44 @@
+﻿@using System.Activities.Expressions
+@{
+    Layout = "../Shared/_layout.cshtml";
+}
+<div class="admin-content">
+    <div class="am-cf am-padding">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">首页</strong> / <small>功能模块</small></div>
+    </div>
+    <ul class="am-avg-sm-1 am-avg-md-3 am-margin am-padding am-text-center admin-content-list ">
+        <li><a href="@Url.Action("Query", "Product", "")" class="am-text-secondary"><span class="am-icon-btn am-icon-user-md"></span><br />工程案例管理<br /></a></li>
+        <li><a href="@Url.Action("Query", "Banner", "")" class="am-text-secondary"><span class="am-icon-btn am-icon-user-md"></span><br />Banner管理<br /></a></li>
+        <li><a href="@Url.Action("Query", "News", "")" class="am-text-secondary"><span class="am-icon-btn am-icon-recycle"></span><br/>新闻管理<br/></a></li>
+        <!--<li><a href="@Url.Action("Query", "Account", "")" class="am-text-secondary"><span class="am-icon-btn am-icon-file-text"></span><br />用户管理<br /></a></li>-->
+    </ul>
+</div>
+<div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
+    <div class="am-modal-dialog">
+        <div class="am-modal-bd">
+            你，确定要删除这条记录吗？
+        </div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+            <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.doc-modal-list').find('.doc-confirm-toggle').
+          on('click', function () {
+              $('#my-confirm').modal({
+                  relatedTarget: this,
+                  onConfirm: function (options) {
+                      var $link = $(this.relatedTarget);
+                      var id = $link.data('id');
+                      window.location.href = "/JobBstar/Delete?id=" + id;
+                  },
+                  // closeOnConfirm: false,
+                  onCancel: function () {
+                  }
+              });
+          });
+    });
+</script>

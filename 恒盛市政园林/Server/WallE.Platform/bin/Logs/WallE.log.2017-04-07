@@ -1,0 +1,77 @@
+2017-04-07 23:07:00,567[1] INFO  - 正在检测管理数据库是否存在...
+2017-04-07 23:07:03,052[1] ERROR - 无法连接数到据库服务器,请重新设置连接字符串
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 WallE.Platform.Support.MgntDbManager.<CreateManagementDb>d__0.MoveNext() 位置 N:\Develop\WebDev\Project\恒盛市政园林\Server\WallE.Platform\Support\MgntDbManager.cs:行号 33
+******************************************** /n2017-04-07 23:07:26,718[1] INFO  - 正在检测管理数据库是否存在...
+2017-04-07 23:07:29,040[1] ERROR - 无法连接数到据库服务器,请重新设置连接字符串
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 WallE.Platform.Support.MgntDbManager.<CreateManagementDb>d__0.MoveNext() 位置 N:\Develop\WebDev\Project\恒盛市政园林\Server\WallE.Platform\Support\MgntDbManager.cs:行号 33
+******************************************** /n2017-04-07 23:07:48,001[1] INFO  - 正在检测管理数据库是否存在...
+2017-04-07 23:07:50,346[1] ERROR - 无法连接数到据库服务器,请重新设置连接字符串
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 WallE.Platform.Support.MgntDbManager.<CreateManagementDb>d__0.MoveNext() 位置 N:\Develop\WebDev\Project\恒盛市政园林\Server\WallE.Platform\Support\MgntDbManager.cs:行号 33
+******************************************** /n2017-04-07 23:15:02,829[1] INFO  - 正在检测管理数据库是否存在...
+2017-04-07 23:15:02,989[1] INFO  - 成功获取管理数据库！
+2017-04-07 23:15:57,895[9] ERROR - 获取分类信息失败！
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.set_Item(TKey key, TValue value)
+   在 WallE.Data.MySql.DbAccessorMgnt.GetDbAccessor(String connStr) 位置 N:\Develop\WebDev\Project\恒盛市政园林\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessorMgnt.cs:行号 45
+   在 WallE.Data.MySql.DbAccessorMgnt.GetMgntDbAccessor() 位置 N:\Develop\WebDev\Project\恒盛市政园林\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessorMgnt.cs:行号 35
+   在 WallE.Platform.DalService.CategoryDal.<GetCategorysAsync>d__4.MoveNext() 位置 N:\Develop\WebDev\Project\恒盛市政园林\Server\WallE.Platform\DalService\CategoryDal.cs:行号 32
+2017-04-07 23:19:09,300[1] INFO  - 正在检测管理数据库是否存在...
+2017-04-07 23:19:09,444[1] INFO  - 成功获取管理数据库！
+2017-04-07 23:28:00,120[1] INFO  - 正在检测管理数据库是否存在...
+2017-04-07 23:28:00,266[1] INFO  - 成功获取管理数据库！
+2017-04-07 23:45:52,623[1] INFO  - 正在检测管理数据库是否存在...
+2017-04-07 23:45:52,768[1] INFO  - 成功获取管理数据库！
+2017-04-07 23:45:58,152[9] ERROR - 获取分类信息失败！
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.set_Item(TKey key, TValue value)
+   在 WallE.Data.MySql.DbAccessorMgnt.GetDbAccessor(String connStr) 位置 N:\Develop\WebDev\Project\恒盛市政园林\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessorMgnt.cs:行号 45
+   在 WallE.Data.MySql.DbAccessorMgnt.GetMgntDbAccessor() 位置 N:\Develop\WebDev\Project\恒盛市政园林\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessorMgnt.cs:行号 35
+   在 WallE.Platform.DalService.CategoryDal.<GetCategorysAsync>d__4.MoveNext() 位置 N:\Develop\WebDev\Project\恒盛市政园林\Server\WallE.Platform\DalService\CategoryDal.cs:行号 32
+2017-04-07 23:47:00,564[1] INFO  - 正在检测管理数据库是否存在...
+2017-04-07 23:47:00,706[1] INFO  - 成功获取管理数据库！
+2017-04-07 23:54:06,296[1] INFO  - 正在检测管理数据库是否存在...
+2017-04-07 23:54:06,441[1] INFO  - 成功获取管理数据库！

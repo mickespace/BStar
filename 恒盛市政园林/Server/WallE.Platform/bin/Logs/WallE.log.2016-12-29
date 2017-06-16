@@ -1,0 +1,18 @@
+2016-12-29 23:35:58,887[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-29 23:35:59,071[1] INFO  - 成功获取管理数据库！
+******************************************** /n2016-12-29 23:36:04,253[20] INFO  - 正在检测管理数据库是否存在...
+2016-12-29 23:36:04,319[20] INFO  - 成功获取管理数据库！
+2016-12-29 23:36:09,983[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where  = '' ORDER BY  DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 E:\Website\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-29 23:36:10,037[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 N:\Develop\WebDev\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31

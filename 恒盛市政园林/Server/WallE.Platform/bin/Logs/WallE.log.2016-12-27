@@ -1,0 +1,84 @@
+2016-12-27 22:29:04,929[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-27 22:29:05,090[1] INFO  - 成功获取管理数据库！
+******************************************** /n2016-12-27 22:29:09,946[20] INFO  - 正在检测管理数据库是否存在...
+2016-12-27 22:29:09,993[20] INFO  - 成功获取管理数据库！
+2016-12-27 22:34:14,213[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-27 22:34:14,374[1] INFO  - 成功获取管理数据库！
+2016-12-27 22:34:57,771[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-27 22:34:57,935[1] INFO  - 成功获取管理数据库！
+2016-12-27 23:30:36,079[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-27 23:30:36,238[1] INFO  - 成功获取管理数据库！
+2016-12-27 23:30:36,950[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[RealName] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 E:\Website\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-27 23:30:36,992[9] ERROR - 获取用户信息列表失败！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Business.UserMgnt.<GetUserListAsync>d__5.MoveNext() 位置 E:\Website\Server\WallE.Platform\Business\UserMgnt.cs:行号 52
+2016-12-27 23:30:45,198[8] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[RealName] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 E:\Website\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-27 23:30:45,220[8] ERROR - 获取用户信息列表失败！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Business.UserMgnt.<GetUserListAsync>d__5.MoveNext() 位置 E:\Website\Server\WallE.Platform\Business\UserMgnt.cs:行号 52
+2016-12-27 23:39:05,499[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-27 23:39:05,661[1] INFO  - 成功获取管理数据库！
+2016-12-27 23:39:54,848[8] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[RealName] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 E:\Website\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-27 23:39:54,881[9] ERROR - 获取用户信息列表失败！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Business.UserMgnt.<GetUserListAsync>d__5.MoveNext() 位置 E:\Website\Server\WallE.Platform\Business\UserMgnt.cs:行号 52
+2016-12-27 23:39:58,242[8] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 E:\Website\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-27 23:39:58,266[8] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-27 23:40:03,018[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[RealName] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 E:\Website\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-27 23:40:03,039[9] ERROR - 获取用户信息列表失败！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Business.UserMgnt.<GetUserListAsync>d__5.MoveNext() 位置 E:\Website\Server\WallE.Platform\Business\UserMgnt.cs:行号 52
+2016-12-27 23:48:11,612[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-27 23:48:11,781[1] INFO  - 成功获取管理数据库！

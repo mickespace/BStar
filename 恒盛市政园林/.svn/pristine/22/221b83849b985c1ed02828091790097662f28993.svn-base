@@ -1,0 +1,119 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Web;
+using System.Web.Mvc;
+using WallE.Data.MySql;
+using WallE.Platform.DalService;
+using WallE.Platform.Models;
+
+namespace WallE.Platform.Controllers
+{
+    /// <summary>
+    /// Class BannerController.
+    /// </summary>
+    public class BannerController : BaseController
+    {
+        /// <summary>
+        /// Adds the specified model.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <returns>ActionResult.</returns>
+        [HttpPost]
+        public async Task<ActionResult> Add(Banner model)
+        {
+            if (string.IsNullOrEmpty(model.Title))
+                model.Title = "未命名的Banner";
+            SavePicture(true);
+            //model.Content = HttpUtility.UrlDecode(model.Content);
+            model.ImageNormal = SrcImagPath ?? ErrorPicture;
+            model.ImageSmall = ThumbnailPath ?? ErrorPicture;
+            model.CreateTime = DateTime.Now.Date;
+            model.Status = 1;
+            model.DisplayType = 1;
+            model.Id = Guid.NewGuid().ToString().ToLower();
+            var result = await BannerDal.Ins.CreateBannerAsync(model);
+            if (result.ResultType == ResultType.Ok)
+                return RedirectToAction("Query");
+            model.Id = null;
+            model.ImageNormal = "";
+            model.ImageSmall = "";
+            ViewData["Categorys"] = await CategoryDal.Ins.GetCategorysAsync((int)CategoryType.Banner);
+            return View("BannerDetail", model);
+        }
+
+        /// <summary>
+        /// Updates the specified model.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <returns>ActionResult.</returns>
+        [HttpPost]
+        public async Task<ActionResult> Update(Banner model)
+        {
+            SavePicture(true);
+            //model.Content = HttpUtility.UrlDecode(model.Content);
+            var updateDic = new Dictionary<string, object>();
+            if (SrcImagPath != null)  //图片更改
+            {
+                updateDic[Banner.ColImageNormal] = SrcImagPath ?? ErrorPicture;
+                updateDic[Banner.ColImageSmall] = ThumbnailPath ?? ErrorPicture;
+            }
+            updateDic[Banner.ColType] = model.Type;
+            //updateDic[Banner.ColContent] = model.Content;
+            updateDic[Banner.ColDisplayOrder] = model.DisplayOrder;
+            updateDic[Banner.ColTitle] = model.Title;
+            updateDic[Banner.ColDescription] = model.Description;
+            var r = await BannerDal.Ins.ModifyBannerAsync(model.Id, updateDic);
+            if (r)
+                return RedirectToAction("Query");
+            ViewData["Categorys"] = await CategoryDal.Ins.GetCategorysAsync((int)CategoryType.Banner);
+            return View("BannerDetail", model);
+        }
+
+        /// <summary>
+        /// Queries the specified base parameters.
+        /// </summary>
+        /// <param name="searchParams">The search parameters.</param>
+        [HttpGet]
+        public async Task<ActionResult> Query(SearchParams searchParams)
+        {
+            var banners = await BannerDal.Ins.GetBannerListAsync(searchParams);
+            ViewData["SearchParams"] = searchParams;
+            return View("Banner", banners);
+        }
+
+        /// <summary>
+        /// Banners the detail.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        [HttpGet]
+        public async Task<ActionResult> BannerDetail(string id)
+        {
+            ViewData["Categorys"] = await CategoryDal.Ins.GetCategorysAsync((int)CategoryType.Banner);
+            if (string.IsNullOrEmpty(id))
+                return View(new Banner());
+            var banner = await BannerDal.Ins.GetBannerInfoAsync(id);
+            return View(banner);
+        }
+
+        /// <summary>
+        /// 分类管理
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<ActionResult> Category()
+        {
+            var categorys = await CategoryDal.Ins.GetCategorysAsync((int)CategoryType.Banner);
+            return View(categorys);
+        }
+
+        ///// <summary>
+        /////导航菜单视图
+        ///// </summary>
+        //public async Task<PartialViewResult> NavMenu()
+        //{
+        //    var categorys = await CategoryDal.Ins.GetCategorysAsync((int)CategoryType.Banner);
+        //    return PartialView(categorys);
+        //}
+    }
+}

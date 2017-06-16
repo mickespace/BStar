@@ -1,0 +1,90 @@
+﻿@model List<WallE.Platform.Models.Category>
+
+@{
+    ViewBag.Title = "案例分类管理";
+    Layout = "../Shared/_layout.cshtml";
+}
+<div class="admin-content">
+    <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+        <div class="am-list-news-hd am-cf">
+            <a href="##">
+                <h2>案例分类</h2>
+            </a>
+        </div>
+        <ul>
+            @foreach (var category in Model)
+            {
+                <li style="margin-top: 5px">
+                    @category.Name
+                    <div class="am-btn-group am-btn-group-xs" style="padding-left: 15px;">
+                        <button type="button" categoryId="@category.Id" class="am-btn am-btn-default category_delete">
+                            <span class="am-icon-remove"></span>删除
+                        </button>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+    <div class="am-list-news-hd am-cf">
+        <a href="##">
+            <h2>添加新分类</h2>
+        </a>
+    </div>
+    <div style="text-align: left; padding: 5px;">
+        <label>分类名称:</label>
+        <input name="Category" Id="CategoryName" style="width: 150px" type="text" placeholder="请输入...">
+    </div>
+
+    <div style="text-align: left; padding: 10px;">
+        <button class="am-btn am-btn-primary category_add">
+            添加
+        </button>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.category_delete').on('click', function () {
+            var curLink = $(this);
+            var curId = curLink.attr("categoryId");
+            var url = "/api/product/delete_category?accessToken=" + "test" + "&categoryId=" + curId;
+            $.ajax({
+                url: url,
+                type: "POST",
+                processData: false,
+                contentType: false,
+                data: "",
+                success: function (r) {
+                    if (!r.IsSuccess) {
+                        alert(r.ErrorMessage);
+                        return;
+                    }
+                    //处理结果
+                    window.location.reload();
+                }
+            });
+        });
+        $('.category_add').on('click', function () {
+            var curName = $('#CategoryName').val();
+            if (curName.trim()==="") {
+                alert("请输入分类名称！");
+                return;
+            }
+            var url = "/api/product/add_category?accessToken=" + "test" + "&category=" + curName;
+            $.ajax({
+                url: url,
+                type: "POST",
+                processData: false,
+                contentType: false,
+                data: "",
+                success: function (r) {
+                    if (!r.IsSuccess) {
+                        alert(r.ErrorMessage);
+                        return;
+                    }
+                    //处理结果
+                    window.location.reload();
+                }
+            });
+        });
+    });
+</script>

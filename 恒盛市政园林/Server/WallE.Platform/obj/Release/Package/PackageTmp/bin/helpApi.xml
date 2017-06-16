@@ -1,0 +1,1194 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WallE.Platform</name>
+    </assembly>
+    <members>
+        <member name="T:WallE.Platform.Controllers.PictureAPIController">
+            <summary>
+            Banner管理
+            </summary>
+        </member>
+        <member name="F:WallE.Platform.Controllers.PictureAPIController.ErrorPicture">
+            <summary>
+            错误图片
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Controllers.PictureAPIController.SrcImagPath">
+            <summary>
+            原图文件路径
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Controllers.PictureAPIController.ThumbnailPath">
+            <summary>
+            缩略图文件路径
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Controllers.PictureAPIController.SavePicture(WallE.Platform.Support.StreamInfo)">
+            <summary>
+            文件统一管理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.PictureAPIController.Add(System.String,System.String,System.String)">
+            <summary>
+            添加图片
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="fileName">文件名</param>
+            <param name="objectId">对象编号</param>
+            <returns></returns>
+        </member>
+        <member name="T:WallE.Platform.Controllers.BaseController">
+            <summary>
+            Class BaseController.
+            </summary>
+        </member>
+        <member name="F:WallE.Platform.Controllers.BaseController.ErrorPicture">
+            <summary>
+            错误图片
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Controllers.BaseController.SrcImagPath">
+            <summary>
+            原图文件路径
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Controllers.BaseController.ThumbnailPath">
+            <summary>
+            缩略图文件路径
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BaseController.SavePicture(System.Boolean,System.String)">
+            <summary>
+            文件统一管理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WallE.Platform.Controllers.HomeController">
+            <summary>
+            主界面控制器
+            </summary>
+        </member>
+        <member name="T:WallE.Platform.Controllers.NewsAPIController">
+            <summary>
+            新闻管理
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Controllers.NewsAPIController.NewsList(System.Int32,System.Int32,System.String)">
+            <summary>
+            获取新闻列表(pageIndex为1,pageSize为-1时则获取所有)
+            </summary>
+            <param name="pageIndex">页索引（从1开始）</param>
+            <param name="pageSize">页记录数量</param>
+            <param name="category">分类编号</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.NewsAPIController.CategoryList">
+            <summary>
+            获取新闻分类
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Controllers.NewsAPIController.NewsDetial(System.String)">
+            <summary>
+            获取新闻详细信息
+            </summary>
+            <param name="id">新闻编号</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.NewsAPIController.ModifyStatus(System.String,System.String,System.Boolean)">
+            <summary>
+            上线与下线
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="id">编号</param>
+            <param name="status">状态(true下线false上线)</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.NewsAPIController.Delete(System.String,System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="id">编号</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.NewsAPIController.DeleteCategory(System.String,System.String)">
+            <summary>
+            删除新分类
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.NewsAPIController.AddCategory(System.String,System.String)">
+            <summary>
+            添加新分类
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WallE.Platform.Controllers.NewsController">
+            <summary>
+            Class NewsController.
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Controllers.NewsController.Add(WallE.Platform.Models.News)">
+            <summary>
+            Adds the specified model.
+            </summary>
+            <param name="model">The model.</param>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.NewsController.Update(WallE.Platform.Models.News)">
+            <summary>
+            Updates the specified model.
+            </summary>
+            <param name="model">The model.</param>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.NewsController.Query(WallE.Platform.Models.SearchParams)">
+            <summary>
+            Queries the specified base parameters.
+            </summary>
+            <param name="searchParams">The search parameters.</param>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.NewsController.NewsDetail(System.String)">
+            <summary>
+            Newss the detail.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.NewsController.Category">
+            <summary>
+            分类管理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.NewsController.NavMenu">
+             <summary>
+            导航菜单视图
+             </summary>
+        </member>
+        <member name="T:WallE.Platform.Controllers.BannerAPIController">
+            <summary>
+            图片管理
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BannerAPIController.BannerList(System.Int32,System.Int32,System.String)">
+            <summary>
+            获取图片列表(pageIndex为1,pageSize为-1时则获取所有)
+            </summary>
+            <param name="pageIndex">页索引（从1开始）</param>
+            <param name="pageSize">页记录数量</param>
+            <param name="category">图片分类，默认不填（获取所有）</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BannerAPIController.BannerDetial(System.String)">
+            <summary>
+            获取图片详细信息
+            </summary>
+            <param name="id">Banner编号</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BannerAPIController.ModifyStatus(System.String,System.String,System.Boolean)">
+            <summary>
+            上线与下线
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="id">编号</param>
+            <param name="status">状态(true下线false上线)</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BannerAPIController.Delete(System.String,System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="id">编号</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BannerAPIController.CategoryList">
+            <summary>
+            获取图片分类
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BannerAPIController.DeleteCategory(System.String,System.String)">
+            <summary>
+            删除新分类
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BannerAPIController.AddCategory(System.String,System.String)">
+            <summary>
+            添加新分类
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WallE.Platform.Controllers.BannerController">
+            <summary>
+            Class BannerController.
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BannerController.Add(WallE.Platform.Models.Banner)">
+            <summary>
+            Adds the specified model.
+            </summary>
+            <param name="model">The model.</param>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BannerController.Update(WallE.Platform.Models.Banner)">
+            <summary>
+            Updates the specified model.
+            </summary>
+            <param name="model">The model.</param>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BannerController.Query(WallE.Platform.Models.SearchParams)">
+            <summary>
+            Queries the specified base parameters.
+            </summary>
+            <param name="searchParams">The search parameters.</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BannerController.BannerDetail(System.String)">
+            <summary>
+            Banners the detail.
+            </summary>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BannerController.Category">
+            <summary>
+            分类管理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.BannerController.NavMenu">
+             <summary>
+            导航菜单视图
+             </summary>
+        </member>
+        <member name="T:WallE.Platform.Controllers.ProductController">
+            <summary>
+            Class ProductController.
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductController.Add(WallE.Platform.Models.Product)">
+            <summary>
+            Adds the specified model.
+            </summary>
+            <param name="model">The model.</param>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductController.Update(WallE.Platform.Models.Product)">
+            <summary>
+            Updates the specified model.
+            </summary>
+            <param name="model">The model.</param>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductController.Query(WallE.Platform.Models.SearchParams)">
+            <summary>
+            Queries the specified base parameters.
+            </summary>
+            <param name="searchParams">The search parameters.</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductController.ProductDetail(System.String)">
+            <summary>
+            Products the detail.
+            </summary>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductController.Category">
+            <summary>
+            分类管理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductController.NavMenu">
+             <summary>
+            导航菜单视图
+             </summary>
+        </member>
+        <member name="T:WallE.Platform.Controllers.ProductAPIController">
+            <summary>
+            工程案例管理
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductAPIController.ProductList(System.Int32,System.Int32,System.String)">
+            <summary>
+            获取案例列表(pageIndex为1,pageSize为-1时则获取所有)
+            </summary>
+            <param name="pageIndex">页索引（从1开始）</param>
+            <param name="pageSize">页记录数量</param>
+            <param name="category">案例分类，默认不填（获取所有）</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductAPIController.CategoryList">
+            <summary>
+            获取案例分类
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductAPIController.PictureList(System.String)">
+            <summary>
+            获取案例图集
+            </summary>
+            <param name="id">案例编号</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductAPIController.ProductDetial(System.String)">
+            <summary>
+            获取案例详细信息
+            </summary>
+            <param name="id">案例编号</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductAPIController.ModifyStatus(System.String,System.String,System.Boolean)">
+            <summary>
+            上线与下线
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="id">编号</param>
+            <param name="status">状态(true下线false上线)</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductAPIController.Delete(System.String,System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="id">编号</param>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductAPIController.DeleteCategory(System.String,System.String)">
+            <summary>
+            删除新分类
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductAPIController.AddCategory(System.String,System.String)">
+            <summary>
+            添加新分类
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.Controllers.ProductAPIController.DeletePicture(System.String,System.String)">
+            <summary>
+            删除图片
+            </summary>
+            <param name="accessToken">令牌</param>
+            <param name="pictureId"></param>
+            <returns></returns>
+        </member>
+        <member name="P:WallE.Platform.DalService.CategoryDal.Ins">
+            <summary>
+            全局唯一变量
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.DalService.CategoryDal.GetCategorysAsync(System.Int32)">
+            <summary>
+            获取分类信息
+            </summary>
+            <param name="categoryType">分类类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.DalService.CategoryDal.AddCategoryAsync(System.Int32,System.String)">
+            <summary>
+            保存分类信息
+            </summary>
+            <param name="categoryType">分类类型</param>
+            <param name="name">分类名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.DalService.CategoryDal.DeleteCategoryAsync(System.String)">
+            <summary>
+            删除分类
+            </summary>
+            <param name="id">删除的Id</param>
+        </member>
+        <member name="T:WallE.Platform.DalService.NewsDal">
+            <summary>
+            Class NewsionMgnt.
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.DalService.NewsDal.Ins">
+            <summary>
+            全局唯一变量
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.DalService.NewsDal.GetNewsListAsync(WallE.Platform.Models.SearchParams,System.Int32)">
+            <summary>
+            获取信息列表
+            </summary>
+            <param name="searchParams">搜索信息</param>
+            <param name="displayType">显示类型</param>
+        </member>
+        <member name="M:WallE.Platform.DalService.NewsDal.GetNewsInfoAsync(System.String)">
+            <summary>
+            获取详细信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.DalService.NewsDal.ModifyStatusAsync(System.String,System.Boolean)">
+            <summary>
+            上线与下线
+            </summary>
+            <param name="id">编号</param>
+            <param name="status">状态(true下线false上线)</param>
+        </member>
+        <member name="M:WallE.Platform.DalService.NewsDal.ModifyNewsAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            修改
+            </summary>
+            <param name="id">编号</param>
+            <param name="updateData">修改的信息</param>
+        </member>
+        <member name="M:WallE.Platform.DalService.NewsDal.DeleteNewsAsync(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">删除的Id</param>
+        </member>
+        <member name="M:WallE.Platform.DalService.NewsDal.CreateNewsAsync(WallE.Platform.Models.News)">
+            <summary>
+            添加
+            </summary>
+            <param name="model">新添加的信息</param>
+        </member>
+        <member name="T:WallE.Platform.DalService.BannerDal">
+            <summary>
+            Class BannerionMgnt.
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.DalService.BannerDal.Ins">
+            <summary>
+            全局唯一变量
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.DalService.BannerDal.GetBannerListAsync(WallE.Platform.Models.SearchParams,System.Int32)">
+            <summary>
+            获取信息列表
+            </summary>
+            <param name="searchParams">搜索信息</param>
+            <param name="displayType">显示类型</param>
+        </member>
+        <member name="M:WallE.Platform.DalService.BannerDal.GetBannerInfoAsync(System.String)">
+            <summary>
+            获取详细信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.DalService.BannerDal.ModifyStatusAsync(System.String,System.Boolean)">
+            <summary>
+            上线与下线
+            </summary>
+            <param name="id">编号</param>
+            <param name="status">状态(true下线false上线)</param>
+        </member>
+        <member name="M:WallE.Platform.DalService.BannerDal.ModifyBannerAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            修改
+            </summary>
+            <param name="id">编号</param>
+            <param name="updateData">修改的信息</param>
+        </member>
+        <member name="M:WallE.Platform.DalService.BannerDal.DeleteBannerAsync(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">删除的Id</param>
+        </member>
+        <member name="M:WallE.Platform.DalService.BannerDal.CreateBannerAsync(WallE.Platform.Models.Banner)">
+            <summary>
+            添加
+            </summary>
+            <param name="model">新添加的信息</param>
+        </member>
+        <member name="P:WallE.Platform.DalService.PictureDal.Ins">
+            <summary>
+            全局唯一变量
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.DalService.PictureDal.GetPicturesAsync(System.String)">
+            <summary>
+            获取图片列表
+            </summary>
+            <param name="objectId">对象编号</param>
+        </member>
+        <member name="M:WallE.Platform.DalService.PictureDal.AddPicture(System.String,System.String,System.String,System.String)">
+            <summary>
+            保存图片
+            </summary>
+            <param name="objectId"></param>
+            <param name="fileName"></param>
+            <param name="imageNormal"></param>
+            <param name="imageSmall"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.DalService.PictureDal.DeletePictureAsync(System.String)">
+            <summary>
+            删除图片
+            </summary>
+            <param name="id">删除的Id</param>
+        </member>
+        <member name="T:WallE.Platform.DalService.ProductDal">
+            <summary>
+            Class ProductionMgnt.
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.DalService.ProductDal.Ins">
+            <summary>
+            全局唯一变量
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.DalService.ProductDal.GetProductListAsync(WallE.Platform.Models.SearchParams,System.Int32)">
+            <summary>
+            获取信息列表
+            </summary>
+            <param name="searchParams">搜索信息</param>
+            <param name="displayType">显示类型</param>
+        </member>
+        <member name="M:WallE.Platform.DalService.ProductDal.GetProductInfoAsync(System.String)">
+            <summary>
+            获取详细信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WallE.Platform.DalService.ProductDal.ModifyStatusAsync(System.String,System.Boolean)">
+            <summary>
+            上线与下线
+            </summary>
+            <param name="id">编号</param>
+            <param name="status">状态(true下线false上线)</param>
+        </member>
+        <member name="M:WallE.Platform.DalService.ProductDal.ModifyProductAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            修改
+            </summary>
+            <param name="id">编号</param>
+            <param name="updateData">修改的信息</param>
+        </member>
+        <member name="M:WallE.Platform.DalService.ProductDal.DeleteProductAsync(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">删除的Id</param>
+        </member>
+        <member name="M:WallE.Platform.DalService.ProductDal.CreateProductAsync(WallE.Platform.Models.Product)">
+            <summary>
+            添加
+            </summary>
+            <param name="model">新添加的信息</param>
+        </member>
+        <member name="T:WallE.Platform.BannerType">
+            <summary>
+            首屏大图类型
+            </summary>
+        </member>
+        <member name="F:WallE.Platform.BannerType.Index">
+            <summary>
+            首页大图
+            </summary>
+        </member>
+        <member name="F:WallE.Platform.BannerType.Opinions">
+            <summary>
+            Opinions大图
+            </summary>
+        </member>
+        <member name="F:WallE.Platform.DisplayType.ListPage">
+            <summary>
+            列表页
+            </summary>
+        </member>
+        <member name="F:WallE.Platform.DisplayType.FrontPage">
+            <summary>
+            首页
+            </summary>
+        </member>
+        <member name="F:WallE.Platform.DisplayType.SecondPage">
+            <summary>
+            二级页
+            </summary>
+        </member>
+        <member name="T:WallE.Platform.CategoryType">
+            <summary>
+            类型分类
+            </summary>
+        </member>
+        <member name="F:WallE.Platform.CategoryType.Product">
+            <summary>
+            工程案例
+            </summary>
+        </member>
+        <member name="F:WallE.Platform.CategoryType.News">
+            <summary>
+            新闻
+            </summary>
+        </member>
+        <member name="F:WallE.Platform.CategoryType.Banner">
+            <summary>
+            Banner
+            </summary>
+        </member>
+        <member name="F:WallE.Platform.CategoryType.Custom">
+            <summary>
+            其它
+            </summary>
+        </member>
+        <member name="T:WallE.Platform.Models.Banner">
+            <summary>
+            Banner信息
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Banner.Id">
+            <summary>
+            标识
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Banner.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Banner.Status">
+            <summary>
+            状态（-1删除1启用0禁用）
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Banner.DisplayType">
+            <summary>
+            显示位置（1列表页2首页4其它页面）
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Banner.LinkUrl">
+            <summary>
+            banner链接地址
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Banner.DisplayOrder">
+            <summary>
+            显示顺序
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Banner.Title">
+            <summary>
+            Banner标题
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Banner.Description">
+            <summary>
+            Banner描述
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Banner.ImageSmall">
+            <summary>
+            缩略图
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Banner.ImageNormal">
+            <summary>
+            原始图片
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Banner.Type">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Banner.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Banner.UserId">
+            <summary>
+            用户编号
+            </summary>
+        </member>
+        <member name="T:WallE.Platform.Models.BannerModel">
+            <summary>
+            Banner信息
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.BannerModel.Id">
+            <summary>
+            标识
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.BannerModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.BannerModel.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.BannerModel.Title">
+            <summary>
+            Banner标题
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.BannerModel.ImageSmall">
+            <summary>
+            缩略图
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.BannerModel.LinkUrl">
+            <summary>
+            banner链接地址
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.BannerModel.ImageNormal">
+            <summary>
+            原始图片
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.BannerModel.Type">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="T:WallE.Platform.Models.News">
+            <summary>
+            新闻信息
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.News.Id">
+            <summary>
+            标识
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.News.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.News.Status">
+            <summary>
+            状态（-1删除1启用0禁用）
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.News.DisplayType">
+            <summary>
+            显示位置（1列表页2首页4其它页面）
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.News.DisplayOrder">
+            <summary>
+            显示顺序
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.News.Title">
+            <summary>
+            新闻标题
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.News.Description">
+            <summary>
+            新闻描述
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.News.Content">
+            <summary>
+            新闻内容
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.News.ImageSmall">
+            <summary>
+            缩略图
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.News.ImageNormal">
+            <summary>
+            原始图片
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.News.Type">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.News.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.News.UserId">
+            <summary>
+            用户编号
+            </summary>
+        </member>
+        <member name="T:WallE.Platform.Models.NewsModel">
+            <summary>
+            新闻信息
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.NewsModel.Id">
+            <summary>
+            标识
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.NewsModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.NewsModel.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.NewsModel.Title">
+            <summary>
+            新闻标题
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.NewsModel.Description">
+            <summary>
+            新闻摘要
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.NewsModel.ImageSmall">
+            <summary>
+            缩略图
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.NewsModel.ImageNormal">
+            <summary>
+            原始图片
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.NewsModel.Type">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="T:WallE.Platform.Models.Picture">
+            <summary>
+            图片数据
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Picture.Id">
+            <summary>
+            图片编号
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Picture.Name">
+            <summary>
+            图片名
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Picture.ObjectId">
+            <summary>
+            原对象编号
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Picture.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Picture.ImageSmall">
+            <summary>
+            缩略图
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Picture.ImageNormal">
+            <summary>
+            原始图片
+            </summary>
+        </member>
+        <member name="T:WallE.Platform.Models.ProductModel">
+            <summary>
+            工程案例信息
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.ProductModel.Id">
+            <summary>
+            标识
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.ProductModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.ProductModel.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.ProductModel.Title">
+            <summary>
+            案例标题
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.ProductModel.ImageSmall">
+            <summary>
+            缩略图
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.ProductModel.ImageNormal">
+            <summary>
+            原始图片
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.ProductModel.Type">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.SearchParams.SearchStr">
+            <summary>
+            搜索字符串
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.SearchParams.Category">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.SearchParams.PageIndex">
+            <summary>
+            分页页码
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.SearchParams.PageSize">
+            <summary>
+            单页记录条数
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.SearchParams.TotalCount">
+            <summary>
+            总行数
+            </summary>
+        </member>
+        <member name="T:WallE.Platform.Models.ModifyModel">
+            <summary>
+            修改信息
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.ModifyModel.PropertyDic">
+            <summary>
+            属性修改字典
+            </summary>
+        </member>
+        <member name="T:WallE.Platform.Models.Product">
+            <summary>
+            案例信息
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Product.Id">
+            <summary>
+            标识
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Product.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Product.Status">
+            <summary>
+            状态（-1删除1启用0禁用）
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Product.DisplayType">
+            <summary>
+            显示位置（1列表页2首页4其它页面）
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Product.DisplayOrder">
+            <summary>
+            显示顺序
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Product.Title">
+            <summary>
+            案例标题
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Product.Description">
+            <summary>
+            案例描述
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Product.Content">
+            <summary>
+            案例内容
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Product.ImageSmall">
+            <summary>
+            缩略图
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Product.ImageNormal">
+            <summary>
+            原始图片
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Product.Type">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Product.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Product.UserId">
+            <summary>
+            用户编号
+            </summary>
+        </member>
+        <member name="T:WallE.Platform.Models.Category">
+            <summary>
+            分类信息
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Category.Id">
+            <summary>
+            分类编号
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Category.Name">
+            <summary>
+            分类名称
+            </summary>
+        </member>
+        <member name="P:WallE.Platform.Models.Category.Type">
+            <summary>
+            分类类型（1Product2其它）
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Support.CachingSwaggerProvider.GetControllerDesc">
+            <summary>
+            从API文档中读取控制器描述
+            </summary>
+            <returns>所有控制器描述</returns>
+        </member>
+        <member name="M:WallE.Platform.Support.CustomMultipartFormDataStreamProvider.ExecutePostProcessingAsync">
+            <summary>
+            读取所有信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WallE.Platform.Support.FileManager">
+            <summary>
+            实际文件管理器
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Support.FileManager.SaveFile(System.String,System.IO.Stream)">
+            <summary>
+            保存文件
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Support.FileManager.StreamToBytes(System.IO.Stream)">
+            <summary>
+            Streams to bytes.
+            </summary>
+            <param name="stream">The stream.</param>
+            <returns>System.Byte[].</returns>
+        </member>
+        <member name="M:WallE.Platform.Support.FileManager.GenerateThumbnail(System.String,System.String)">
+            <summary>
+            获取缩略图
+            </summary>
+        </member>
+        <member name="T:WallE.Platform.Support.GlobalSetting">
+            <summary>
+            全局静态值
+            </summary>
+        </member>
+        <member name="T:WallE.Platform.Support.MgntDbManager">
+            <summary>
+            管理数据库初始化
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Support.MgntDbManager.CreateManagementDb">
+            <summary>
+            创建管理数据库
+            </summary>
+        </member>
+        <member name="M:WallE.Platform.Support.MgntDbManager.CreateMgntDatabaseAsync(System.String)">
+            <summary>
+            异步创建管理数据库及表结构
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Config">
+            <summary>
+            Config 的摘要说明
+            </summary>
+        </member>
+        <member name="T:ConfigHandler">
+            <summary>
+            Config 的摘要说明
+            </summary>
+        </member>
+        <member name="T:CrawlerHandler">
+            <summary>
+            Crawler 的摘要说明
+            </summary>
+        </member>
+        <member name="T:Handler">
+            <summary>
+            Handler 的摘要说明
+            </summary>
+        </member>
+        <member name="T:ListFileManager">
+            <summary>
+            FileManager 的摘要说明
+            </summary>
+        </member>
+        <member name="T:NotSupportedHandler">
+            <summary>
+            NotSupportedHandler 的摘要说明
+            </summary>
+        </member>
+        <member name="T:PathFormatter">
+            <summary>
+            PathFormater 的摘要说明
+            </summary>
+        </member>
+        <member name="T:UploadHandler">
+            <summary>
+            UploadHandler 的摘要说明
+            </summary>
+        </member>
+        <member name="P:UploadConfig.PathFormat">
+            <summary>
+            文件命名规则
+            </summary>
+        </member>
+        <member name="P:UploadConfig.UploadFieldName">
+            <summary>
+            上传表单域名称
+            </summary>
+        </member>
+        <member name="P:UploadConfig.SizeLimit">
+            <summary>
+            上传大小限制
+            </summary>
+        </member>
+        <member name="P:UploadConfig.AllowExtensions">
+            <summary>
+            上传允许的文件格式
+            </summary>
+        </member>
+        <member name="P:UploadConfig.Base64">
+            <summary>
+            文件是否以 Base64 的形式上传
+            </summary>
+        </member>
+        <member name="P:UploadConfig.Base64Filename">
+            <summary>
+            Base64 字符串所表示的文件名
+            </summary>
+        </member>
+    </members>
+</doc>

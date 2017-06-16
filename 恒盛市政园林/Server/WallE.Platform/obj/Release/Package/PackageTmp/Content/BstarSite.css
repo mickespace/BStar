@@ -1,0 +1,75 @@
+﻿/*****************登录界面样式*******************/
+.bstar-admin-layout
+{
+    background-color: rgb(239, 245, 247);
+    height: 100%;
+    width: 100%;
+}
+
+.bstar-admin-header {
+    width: 100%;
+    height: 100px;
+}
+.bstar-admin-body
+{
+    min-height: 400px;
+    height: auto;
+    width: 100%;
+    padding: auto;
+    background-color: rgb(213, 237, 246);
+}
+.bstar-admin-footer {
+    width: 100%;
+    height: auto;
+}
+.bstar-amdin-login-margin
+{
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+}
+.bstar-admin-login-layout
+{
+    position: absolute;
+    right: 0;
+    margin-top: 50px;
+    min-height: 200px;
+    height: auto;
+    z-index: 2;
+    width: 300px;
+    border-top: 6px solid rgb(72, 196, 247);
+    background-color: white;
+    padding: 10px;
+}
+.bstar-admin-login-title 
+{
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+.bstar-admin-login-input {
+    margin: 20px 20px;
+}
+.bstar-admin-login-remember {
+    text-align: right;  
+     margin: 20px 20px;
+    font-size: 10px;
+}
+
+.bstar-admin-login-submit {
+    margin: 20px 20px;
+}
+
+.bstar-admin-login-submit-button {
+    width: 46%;
+}
+.bstar-admin-login-tip {
+      margin: 0 20px;
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    width: 100%; 
+    height: auto;
+}

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="max-age=7200">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>南昌恒盛市政园林有限公司</title>
+    <meta name="keywords" content="南昌恒盛市政园林有限公司"/>
+    <meta name="description" content="南昌恒盛市政园林有限公司"/>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/css/base.min.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="header-wrapper">
+        <div class="w1200 m-auto">
+            <a href="/" class="logo fl">
+                <img src="/images/logo.png" alt="南昌恒盛市政园林有限公司"/>
+            </a>
+            <ul class="menu">
+            <li>
+                <a href="/">首页</a>
+            </li>
+            <li>
+                <a href="/view/about.html">关于恒盛</a>
+            </li>
+            <li>
+                <a href="/view/news.html?type=1">新闻中心</a>
+            </li>
+            <li>
+                <a href="/view/quality.html">资质荣誉</a>
+            </li>
+            <li>
+                <a href="/view/case.html">工程案例</a>
+            </li>
+            <li>
+                <a href="/view/job.html">招贤纳士</a>
+            </li>
+            <li>
+                <a href="/view/contact.html">联系我们</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <div class="banner-wrapper">
+        <!-- banner start -->
+        <!-- banner end -->
+    </div>
+    <div class="gray-wrapper">
+        <div class="w1200 m-auto">
+            <div class="clear">
+                <div class="news fl">
+                    <h2 class="title">新闻中心 <span>News</span></h2>
+                    <div class="news-container">
+                        <div class="news-nav fl">
+                            <ul>
+                                <li class="on"><a href="/view/news.html?type=2">行业动态</a><em></em></li>
+                                <li><a href="/view/news.html?type=1">公司新闻</a><em></em></li>
+                                <li><a href="/view/news.html?type=3">通知公告</a><em></em></li>
+                            </ul>
+                        </div>
+                        <div class="news-content fl">
+                            <!-- 新闻资讯 start -->
+                            <!-- 新闻资讯 end -->
+                        </div>
+                    </div>
+                </div>
+                <div class="about fr">
+                    <h2 class="title">关于恒盛 <span>About Us</span></h2>
+                    <img src="/images/about.jpg" alt="">
+                    <div class="about-info">
+                        <h3>简介</h3>
+                        <p>
+                            南昌恒盛市政园林工程有限公司创建于二零一一年，公司具有市政公用工程施工总承包贰级、古建筑工程专业承包贰级、园林绿化施工总承包贰级、环保工程专业承包叁级......
+                            <a href="/view/about.html" class="more" target="_blank">【详细信息】</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+                <div class="service">
+                    <h2 class="title">我们能做什么 <span>What we can do</span></h2>
+                    <div class="service-list">
+                        <ul>
+                            <li>
+                                <a class="s1" href="/view/case.html?category=0a27477c-6fe8-40ab-84fb-a9638f071c17" target="_blank">园林绿化<p>Landscaping</p></a>
+                            </li>
+                            <li>
+                                <a class="s2" href="/view/case.html?category=2f0c7fc6-d862-4911-8aed-d4ff0f785c0c" target="_blank">园林古建<p>Ancient garden</p></a>
+                            </li>
+                            <li>
+                                <a class="s3" href="/view/case.html?category=6c04f618-50e2-4109-a4b9-bce8e3aabd64" target="_blank">城市及道路照明<p>Road lighting</p></a>
+                            </li>
+                            <li>
+                                <a class="s4" href="/view/case.html?category=d5dfdce4-d34c-4a8e-bb69-69407ee82de2" target="_blank">环境保护<p>Environmental </p></a>
+                            </li>
+                            <li class="last">
+                                <a class="s5" href="/view/case.html?category=e3dca49f-3da5-46c1-b7ef-a0106ae9f796" target="_blank">市政工程<p>Municipal Engineering</p></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="service-case">
+                        <!-- 工程案例 start -->
+                        <!-- 工程案例 end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-wrapper">
+        <div class="footer">
+            <div class="w1200 m-auto">
+                <dl class="fl first">
+                    <dt>关于恒盛</dt>
+                    <dd>
+                        <a href="/view/about.html" target="_blank">公司简介</a>
+                        <a href="" target="_blank">领导致辞</a>
+                        <a href="/view/culture" target="_blank">企业文化</a>
+                        <a href="" target="_blank">组织架构</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>新闻中心</dt>
+                    <dd>
+                        <a href="/view/news.html?type=1" target="_blank">公司新闻</a>
+                        <a href="/view/news.html?type=2" target="_blank">行业动态</a>
+                        <a href="/view/news.html?type=3" target="_blank">通知公告</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>资质荣誉</dt>
+                    <dd>
+                        <a href="/view/quality.html" target="_blank">企业资质</a>
+                        <a href="/view/honor.html" target="_blank">企业荣誉</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>工程案例</dt>
+                    <dd>
+                        <a href="/view/case.html?category=0a27477c-6fe8-40ab-84fb-a9638f071c17" target="_blank">园林绿化</a>
+                        <a href="/view/case.html?category=2f0c7fc6-d862-4911-8aed-d4ff0f785c0c" target="_blank">园林古建</a>
+                        <a href="/view/case.html?category=6c04f618-50e2-4109-a4b9-bce8e3aabd64" target="_blank">城市及道路照明</a>
+                        <a href="/view/case.html?category=d5dfdce4-d34c-4a8e-bb69-69407ee82de2" target="_blank">环境保护</a>
+                        <a href="/view/case.html?category=e3dca49f-3da5-46c1-b7ef-a0106ae9f796" target="_blank">市政工程</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>招贤纳士</dt>
+                    <dd>
+                        <a href="/view/job.html" target="_blank">人才理念</a>
+                        <a href="" target="_blank">招聘岗位</a>
+                        <a href="" target="_blank">自我推荐</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>联系我们</dt>
+                    <dd>
+                        <a href="/view/contact.html" target="_blank">联系方式</a>
+                    </dd>
+                </dl>
+                <dl class="fr last">
+                    <dt>关注我们</dt>
+                    <dd>
+                        <span>
+                            <img src="/images/qr_code.png" alt=""/>
+                        </span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <div class="w1200 m-auto">
+                <div class="friend-link">
+                    <dl>
+                        <dt>友情链接：</dt>
+                        <dd>
+                            <a href="http://www.jxpta.com/" target="_blank">江西人事考试网</a>
+                            <a href="http://www.jxazjd.com/index.html" target="_blank">江西建设监督网</a>
+                            <a href="http://www.jxjst.gov.cn/" target="_blank">江西省住房和城乡建设厅网</a>
+                            <a href="http://www.jxjst.gov.cn/" target="_blank">南昌市城乡建设网</a>
+                            <a href="http://www.jzyxh.cn/" target="_blank">江西省建筑业协会</a>
+                            <a href="http://www.jxsl.gov.cn/" target="_blank">江西省水利厅网</a>
+                            <a href="http://www.cweun.org/" target="_blank">中国水利工程协会</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="copyright-info">
+                    <p class="copyright fl">Copyright © 2016 南昌恒盛市政园林有限公司 All rights reserved.</p>
+                    <p class="fl">赣ICP备：<a href="http://jxcainfo.miitbeian.gov.cn/" target="_blank">17003461号</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        技术支持：<a href="" target="_blank">杰盟科技</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/jquery.min.js" type="text/javascript"></script>
+<script src="/js/template.min.js" type="text/javascript"></script>
+<script src="/js/lib.min.js" type="text/javascript"></script>
+<script id="banner" type="text/html">
+    {{if Data.length}}
+        <ul class="slider-content">
+            {{each Data as value index}}
+                <li>
+                    <a href="">
+                        <img src="http://www.nchengsheng.com{{value.ImageNormal}}" alt="">
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+        <div class="left-btn"></div>
+        <div class="right-btn"></div>
+        <div class="slider-nav">
+            {{each Data as value index}}
+                <em class="{{index === 0 ? 'on' : ''}}"></em>
+            {{/each}}
+        </div>
+    {{/if}}
+</script>
+<script id="news" type="text/html">
+    {{if Data.length}}
+        <div class="picture-news fl">
+            <a href="/view/news_detail.html?type=2&id={{Data[0].Id}}" target="_blank">
+                <img src="http://www.nchengsheng.com{{Data[0].ImageNormal}}" alt="">
+                <p>{{Data[0].Title}}</p>
+            </a>
+            <span class="date">{{Data[0].CreateTime.substr(0, 10)}}</span>
+        </div>
+        <div class="text-news fr">
+            <ul>
+                {{each Data as value index}}
+                    {{if index > 0}}
+                        <li>
+                            <div class="date fl">
+                                <span class="day">{{value.CreateTime.substr(8, 2)}}</span>
+                                <span class="year-month">{{value.CreateTime.substr(0, 7)}}</span>
+                            </div>
+                            <div class="info fr">
+                                <h4><a href="/view/news_detail.html?type=2&id={{value.Id}}" title="{{value.Title}}" target="_blank">{{value.Title}}</a></h4>
+                                <p>{{value.Description}}</p>
+                            </div>
+                        </li>
+                     {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    {{/if}}
+</script>
+<script id="case" type="text/html">
+    {{if Data.length}}
+        <ul>
+            {{each Data as value index}}
+                <li>
+                    <a href="/view/case_detail.html?id={{value.Id}}" target="_blank">
+                        <img src="http://www.nchengsheng.com{{value.ImageNormal}}" alt=""/>
+                        <h3>{{value.Title}}</h3>
+                        <p>{{value.CreateTime.substr(0, 10)}}</p>
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+    {{else}}
+        <div class="empty">
+            暂无相关案例
+        </div>
+    {{/if}}
+</script>
+<script type="text/javascript">
+    $(function () {
+        // 获取banner
+        $.ajax({
+            type: 'GET',
+            url: 'http://www.nchengsheng.com/api/banner/list',
+            data: {
+                pageIndex: 1,
+                pageSize: 5,
+                category: 'ce5cabae-22d1-4568-9348-c6cf09e08762'
+            },
+            success: function (json) {
+                $('.banner-wrapper').html(template('banner', json));
+
+                function bannerListFn(a, b, c, d, e, f) {
+                    var $bannerMaxWapDom = a;
+                    var $imgBtnList = b;
+                    var windowWidth = $(window).width();
+                    var timeShow = 0;
+                    var array = 0;
+                    var timeOff = 0;
+                    var imgPos = $bannerMaxWapDom.find("ul").find("li");
+                    var cloneOne = imgPos.first().clone();
+                    $bannerMaxWapDom.find("ul").append(cloneOne);
+                    $bannerMaxWapDom.find("li").width(windowWidth);
+                    var liWidth = imgPos.width();
+                    var liLength = $bannerMaxWapDom.find("li").length;
+                    $bannerMaxWapDom.find("ul").width(liWidth * (liLength + 1));
+
+                    setTimeout(function (i) {
+                        timeShow++;
+                        (timeShow === 1) ? $bannerMaxWapDom.find("ul").fadeIn() : $bannerMaxWapDom.find("ul").hide();
+                    }, 20);
+
+                    $imgBtnList.children().eq(0).addClass("on");
+
+                    $imgBtnList.children().click(function () {
+                        var index = $(this).index();
+                        array = index;
+                        bannerImgList(index);
+                        $imgBtnList.children().eq(array).addClass("on").siblings().removeClass("on");
+                    });
+
+                    function bannerImgList(a) {
+                        $bannerMaxWapDom.find("ul").animate({left: -a * windowWidth}, 400)
+                    }
+
+                    function setTime() {
+                        timeOff = setInterval(function () {
+                            array++;
+                            move();
+                        }, e)
+                    }
+
+                    (f) ? setTime() : setTime;
+
+                    c.stop(true).click(function () {
+                        array--;
+                        move();
+                    });
+
+                    d.stop(true).click(function () {
+                        array++;
+                        move();
+                    });
+
+                    function move() {
+                        if (array === liLength) {
+                            $bannerMaxWapDom.find("ul").css({left: 0});
+                            array = 1;
+                        }
+
+                        if (array === -1) {
+                            $bannerMaxWapDom.find("ul").css({left: -liWidth * (liLength - 1)});
+                            array = liLength - 2
+                        }
+
+                        $bannerMaxWapDom.find("ul").stop(true).animate({
+                            left: -array * liWidth
+                        });
+
+                        (array === liLength - 1) ? $imgBtnList.children().eq(0).addClass("on").siblings().removeClass("on") : $imgBtnList.children().eq(array).addClass("on").siblings().removeClass("on");
+                    }
+
+                    $bannerMaxWapDom.hover(function () {
+                        clearInterval(timeOff);
+                    }, function () {
+                        (f) ? setTime() : setTime;
+                    });
+                }
+
+                bannerListFn($(".banner-wrapper"), $(".slider-nav"), $(".left-btn"), $(".right-btn"), 6000, true);
+            }
+        });
+        // 获取案例
+        $.ajax({
+            type: 'GET',
+            url: 'http://www.nchengsheng.com/api/product/list',
+            data: {
+                pageIndex: 1,
+                pageSize: 4
+            },
+            success: function (json) {
+                $('.service-case').html(template('case', json));
+            }
+        });
+
+        // 获取新闻
+        $.ajax({
+            type: 'GET',
+            url: 'http://www.nchengsheng.com/api/news/list',
+            data: {
+                pageIndex: 1,
+                pageSize: 4,
+                category: '77e9ad01-55c2-4e87-b9b1-e18b789bdb7e'
+            },
+            success: function (json) {
+                $('.news-content').html(template('news', json));
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+﻿@model Permission.WebUI.Models.AccountModel
+@{
+    Layout = "../Shared/_layoutBstar.cshtml";
+}
+<div class="admin-content">
+    <div class="am-cf am-padding">
+        <div class="am-fl am-cf">
+            <strong class="am-text-primary am-text-lg">用户管理</strong> / <small>列表</small></div>
+    </div>
+    <div class="am-g">
+        <div class="am-u-sm-12 am-u-md-6">
+            <div class="am-btn-toolbar">
+                <a href="@Url.Action("AccountDetail", "AccountBstar",new {id=0})">
+                    <div class="am-btn-group am-btn-group-xs" style="padding-left: 15px;">
+                        <button type="button" class="am-btn am-btn-default">
+                            <span class="am-icon-plus"></span>新增
+                        </button>
+                    </div>
+                </a>
+            </div>
+        </div>
+     
+        <div class="am-u-sm-12 am-u-md-3">
+            <div class="am-input-group am-input-group-sm">
+                <input type="text" class="am-form-field">
+                <span class="am-input-group-btn">
+                    <button class="am-btn am-btn-default" type="button">
+                        搜索</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-u-sm-12">
+                <table id="doc-modal-list" class="am-table am-table-striped am-table-hover table-main">
+                    <thead>
+                        <tr>
+                            <th class="table-check">
+                                <input type="checkbox" />
+                            </th>
+                            <th class="table-id">
+                                ID
+                            </th>
+                            <th class="table-title">
+                                用户名
+                            </th>
+                            <th class="table-type">
+                                角色
+                            </th>
+                            <th class="table-date am-hide-sm-only">
+                                注册日期
+                            </th>
+                            <th class="table-set">
+                                操作
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var account in Model.Accounts)
+                        {
+                              <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td>
+                               @account.Id
+                            </td>
+                            <td>
+                                @account.UserName
+                            </td>
+                            <td>
+                               @account.AccountType
+                            </td>
+                            <td >
+                                @account.RegisterTime
+                            </td>
+                            <td>
+                                <div class="am-btn-toolbar">
+                                    <div class="am-btn-group am-btn-group-xs">
+                                        <button class="am-btn am-btn-default am-btn-xs am-text-secondary">
+                                            <a href="@Url.Action("AccountDetail", "AccountBstar",new {id=account.Id})"> <span class="am-icon-pencil-square-o"></span>编辑</a>
+                                        </button>
+
+                                        <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only doc-confirm-toggle" data-id="@account.Id">
+                                            <span class="am-icon-trash-o"></span>删除
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        }
+                      
+          
+                    </tbody>
+                </table>
+            <div class="am-cf">
+                共 @Model.BaseParams.TotalCount 条记录
+                <div class="am-fr">
+                    <ul class="am-pagination">
+                        <li class="am-disabled"><a href="#">«</a></li>
+                        <li class="am-active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
+    <div class="am-modal-dialog">
+        <div class="am-modal-bd">
+            你，确定要删除这条记录吗？
+        </div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+            <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('#doc-modal-list').find('.doc-confirm-toggle').
+          on('click', function () {
+              $('#my-confirm').modal({
+                  relatedTarget: this,
+                  onConfirm: function (options) {
+                      var $link = $(this.relatedTarget);
+                      var id = $link.data('id');
+                      window.location.href = "/AccountBstar/Delete?id=" + id;
+                  },
+                  // closeOnConfirm: false,
+                  onCancel: function () {
+                  }
+              });
+          });
+    });
+</script>

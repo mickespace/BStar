@@ -1,0 +1,55 @@
+﻿
+/***********首页新闻展示样式*****************/
+
+.bstar-news-show-bg
+{
+    height: 410px;
+}
+
+.bstar-news-slider-image
+{
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.bstar-news-slider-detail
+{
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+.bstar-solution-news-item
+{
+    height: 200px;
+    width: 100%;
+    border-bottom: 2px dashed #cccccc;
+    float: none;
+    clear: both;
+    padding: 10px 0;
+}
+
+.bstar-solution-news-image
+{
+    height: 100%;
+    width: 300px;
+    margin-left: 100px;
+    float: left;
+}
+
+.bstar-solution-news-detail
+{
+    height: 100%;
+    padding-left: 100px;
+    width: 700px;
+    float: left;
+}
+
+.bstar-solution-paper
+{
+    clear: both;
+    float: none;
+    padding-top: 20px;
+}
+

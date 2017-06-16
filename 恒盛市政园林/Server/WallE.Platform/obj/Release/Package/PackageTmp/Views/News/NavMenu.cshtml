@@ -1,0 +1,8 @@
+﻿@using WallE.Platform.Models;
+@model IEnumerable<Category>
+
+<li><a href="@Url.Action("Query", "News")" cl class="am-cf"><span class="am-icon-puzzle-piece"></span> 所有列表</a></li>
+@foreach (var category in Model)
+{
+    <li><a href="@Url.Action("Query", "News",new { Category = category.Id})"  class="am-cf"><span class="am-icon-puzzle-piece"></span> @category.Name</a></li>
+}

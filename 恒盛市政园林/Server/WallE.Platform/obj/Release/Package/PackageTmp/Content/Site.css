@@ -1,0 +1,354 @@
+/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    background-image: url(images/solution/bg1.png);
+    padding: 0;
+    font-size: 12px;
+    font: 12px/180% Arial,Lucida,Verdana, "宋体",Helvetica,sans-serif;
+    color: #333;
+    background: #fff;
+    min-width: 1024px;
+}
+
+.bstar-font-32 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.bstar-font-24 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.bstar-font-18 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bstar-font-16 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bstar-font-14 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.bstar-font-12 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.bstar-color-blue {
+    color: #2493cd;
+}
+
+
+.bstar-color-white {
+    color: white;
+}
+
+.bstar-color-red {
+    color: red;
+}
+
+.bstar-color-black {
+    color: black;
+}
+
+.bstar-color-gainsboro {
+    color: gainsboro;
+}
+
+.bstar-color-gray {
+    color: gray;
+}
+
+.bstar-float {
+    float: left;
+}
+
+.bstar-border-blue {
+    border-bottom: 1px solid #2493cd;
+}
+
+.bstar-bgcolor-white {
+    background-color: white;
+}
+
+.bstar-border-white {
+    border: 1px solid white;
+}
+
+
+/*首页--header样式*/
+.bstar-home-header {
+    height: auto;
+    width: 100%;
+    clear: both;
+    float: none;
+    position: relative;
+}
+
+.bstar-header-share-logo {
+    height: 118px;
+    width: 300px;
+    padding: 5px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bstar-home-header-share {
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    background-color: #f1f1f1;
+}
+
+
+.bstar-home-header-top-layout {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    padding-right: 50px;
+    padding-top: 5px;
+}
+
+.bstar-home-header-top-input {
+    width: 150px;
+       height: 25px;
+    color: #555555;
+
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+
+
+.bstar-home-header-top-search {
+    color: #666666;
+    height: 25px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-weight: bold;
+    text-align: center;
+    background-image: none;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    background-color: #e6e6e6;
+}
+
+.bstar-home-header-top {
+    height: 80px;
+    width: 100%;
+    clear: both;
+    float: none;
+
+    background-color: white;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+/*首页--footer样式*/
+.bstar-home-footer {
+    padding-top: 20px;
+    height: auto;
+    width: 100%;
+    background-color: #f2f2f2;
+    clear: both;
+}
+
+.bstar-home-footer-top {
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    background-color: #f2f2f2;
+}
+
+.bstar-home-footer-navigation {
+    height: 100%;
+    width: 60%;
+    float: left;
+    border-right: 2px dashed #cccccc;
+}
+
+    .bstar-home-footer-navigation ul {
+        float: left;
+        height: 100%;
+        width: 25%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+.bstar-home-footer-navigation-title {
+    color: #2493cd;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bstar-home-footer-navigation ul li a {
+    color: gray;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+    .bstar-home-footer-navigation ul li a:hover {
+        color: #2493cd;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+
+.bstar-home-footer-more {
+    height: 100%;
+    width: auto;
+}
+
+.bstar-home-footer-contact {
+    height: 100%;
+    width: 180px;
+    float: left;
+    border-right: 2px dashed #cccccc;
+}
+
+.bstar-home-footer-contact-item {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+    .bstar-home-footer-contact-item img {
+        height: 40px;
+        float: left;
+        margin-right: 10px;
+        width: 40px;
+    }
+
+    .bstar-home-footer-contact-item span {
+        color: #2493cd;
+    }
+
+    .bstar-home-footer-contact-item a {
+        color: gray;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+.bstar-home-footer-follow {
+    height: 100%;
+    width: auto;
+}
+
+.bstar-home-footer-follow-record {
+    float: left;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.bstar-home-footer-follow-tip {
+    height: 25px;
+    width: 60px;
+    margin-top: 30px;
+}
+
+.bstar-home-footer-follow-img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.bstar-home-footer-bottom {
+    margin-top: 20px;
+    clear: both;
+    float: none;
+    height: 25px;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+}
+
+
+
+.bstar-home-footer-bottom-copy {
+    width: auto;
+    color: gray;
+    float: left;
+}
+
+
+/*全局--样式*/
+.global-padding-horization {
+    width: 1180px;
+    margin: auto;
+    clear: both;
+    float: none;
+}
+
+
+.bstar-autocut {  
+    width:200px;  
+    overflow:hidden;  
+    white-space:nowrap;  
+    text-overflow:ellipsis;  
+    -o-text-overflow:ellipsis;  
+    -icab-text-overflow: ellipsis;  
+    -khtml-text-overflow: ellipsis;  
+    -moz-text-overflow: ellipsis;  
+    -webkit-text-overflow: ellipsis;  
+}  
+
+/*首页--content样式*/
+.bstar-global-content {
+        min-height: 500px;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.bstar-logo {
+    position: absolute;
+    left: 0;
+    height: 60px;
+    width: 100px;
+}
+
+.bstar-slider-image {
+    height: 400px;
+    width: 100%;
+}
+
+/**********新闻&咨询——新闻详细样式************/
+.bstar-detail-location {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: #f2f2f2;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.bstar-detail-title {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #Cccccc;
+    position: relative;
+}
+
+.bstar-detail-share {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: auto;
+}

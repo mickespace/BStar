@@ -1,0 +1,33 @@
+﻿.bstar-support-show
+{
+    height: 440px;
+    position: relative;
+    width: 1180px;
+    margin: auto;
+    clear: both;
+    float: none;
+}
+
+.bstar-support-show-img
+{
+    height: 400px;
+    width: auto;
+    position: absolute;
+    left: 0;
+}
+.bstar-support-show-detail
+{
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    padding-left: 20px;
+    right: 0;
+}
+
+.bstar-support-navigation
+{
+    height: 100px;
+    width: 100%;
+    margin: 30px 0;
+    background-color: #cecece;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="max-age=7200">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>南昌恒盛市政园林有限公司</title>
+    <meta name="keywords" content="南昌恒盛市政园林有限公司"/>
+    <meta name="description" content="南昌恒盛市政园林有限公司"/>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/css/base.min.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="header-wrapper">
+        <div class="w1200 m-auto">
+            <a href="/" class="logo fl">
+                <img src="/images/logo.png" alt="南昌恒盛市政园林有限公司"/>
+            </a>
+            <ul class="menu">
+                <li>
+                    <a href="/">首页</a>
+                </li>
+                <li>
+                    <a href="/view/about.html">关于恒盛</a>
+                </li>
+                <li class="active">
+                    <a href="/view/news.html?type=1">新闻中心</a>
+                </li>
+                <li>
+                    <a href="/view/quality.html">资质荣誉</a>
+                </li>
+                <li>
+                    <a href="/view/case.html">工程案例</a>
+                </li>
+                <li>
+                    <a href="/view/job.html">招贤纳士</a>
+                </li>
+                <li>
+                    <a href="/view/contact.html">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="gray-wrapper">
+        <div class="w1200 m-auto">
+            <div class="container">
+                <!-- 新闻详情 start -->
+                <div class="loading">
+                    正在加载中，请稍后～
+                </div>
+                <!-- 新闻详情 end -->
+            </div>
+            <div id="pagination"></div>
+        </div>
+    </div>
+    <div class="footer-wrapper">
+        <div class="footer">
+            <div class="w1200 m-auto">
+                <dl class="fl first">
+                    <dt>关于恒盛</dt>
+                    <dd>
+                        <a href="/view/about.html" target="_blank">公司简介</a>
+                        <a href="" target="_blank">领导致辞</a>
+                        <a href="/view/culture" target="_blank">企业文化</a>
+                        <a href="" target="_blank">组织架构</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>新闻中心</dt>
+                    <dd>
+                        <a href="/view/news.html?type=1" target="_blank">公司新闻</a>
+                        <a href="/view/news.html?type=2" target="_blank">行业动态</a>
+                        <a href="/view/news.html?type=3" target="_blank">通知公告</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>资质荣誉</dt>
+                    <dd>
+                        <a href="/view/quality.html" target="_blank">企业资质</a>
+                        <a href="/view/honor.html" target="_blank">企业荣誉</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>工程案例</dt>
+                    <dd>
+                        <a href="/view/case.html?category=0a27477c-6fe8-40ab-84fb-a9638f071c17" target="_blank">园林绿化</a>
+                        <a href="/view/case.html?category=2f0c7fc6-d862-4911-8aed-d4ff0f785c0c" target="_blank">园林古建</a>
+                        <a href="/view/case.html?category=6c04f618-50e2-4109-a4b9-bce8e3aabd64" target="_blank">城市及道路照明</a>
+                        <a href="/view/case.html?category=d5dfdce4-d34c-4a8e-bb69-69407ee82de2" target="_blank">环境保护</a>
+                        <a href="/view/case.html?category=e3dca49f-3da5-46c1-b7ef-a0106ae9f796" target="_blank">市政工程</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>招贤纳士</dt>
+                    <dd>
+                        <a href="/view/job.html" target="_blank">人才理念</a>
+                        <a href="" target="_blank">招聘岗位</a>
+                        <a href="" target="_blank">自我推荐</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>联系我们</dt>
+                    <dd>
+                        <a href="/view/contact.html" target="_blank">联系方式</a>
+                    </dd>
+                </dl>
+                <dl class="fr last">
+                    <dt>关注我们</dt>
+                    <dd>
+                        <span>
+                            <img src="/images/qr_code.png" alt=""/>
+                        </span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <div class="w1200 m-auto">
+                <div class="friend-link">
+                    <dl>
+                        <dt>友情链接：</dt>
+                        <dd>
+                            <a href="http://www.jxpta.com/" target="_blank">江西人事考试网</a>
+                            <a href="http://www.jxazjd.com/index.html" target="_blank">江西建设监督网</a>
+                            <a href="http://www.jxjst.gov.cn/" target="_blank">江西省住房和城乡建设厅网</a>
+                            <a href="http://www.jxjst.gov.cn/" target="_blank">南昌市城乡建设网</a>
+                            <a href="http://www.jzyxh.cn/" target="_blank">江西省建筑业协会</a>
+                            <a href="http://www.jxsl.gov.cn/" target="_blank">江西省水利厅网</a>
+                            <a href="http://www.cweun.org/" target="_blank">中国水利工程协会</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="copyright-info">
+                    <p class="copyright fl">Copyright © 2016 南昌恒盛市政园林有限公司 All rights reserved.</p>
+                    <p class="fl">赣ICP备：<a href="http://jxcainfo.miitbeian.gov.cn/" target="_blank">17003461号</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        技术支持：<a href="" target="_blank">杰盟科技</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/jquery.min.js" type="text/javascript"></script>
+<script src="/js/template.min.js" type="text/javascript"></script>
+<script src="/js/lib.min.js" type="text/javascript"></script>
+<script id="news" type="text/html">
+    <div class="breadcrumbs clear">
+        当前位置：
+        <a href="/">首页</a>
+        <em>></em>
+        <a href="news.html?type=1">新闻中心</a>
+        <em>></em>
+        <a href="news.html?type={{type}}">{{type === '1' ? '公司新闻' : type === '2' ? '行业动态' : '通知公告'}}</a>
+        <em>></em>
+        <span>{{Data.Title}}</span>
+    </div>
+    <div class="about-container">
+        <h2 class="news-detail-title">{{Data.Title}}</h2>
+        <h4 class="news-detail-sub-title">发布时间：{{Data.CreateTime.substr(0, 10)}}</h4>
+        <div class="news-detail-info"></div>
+    </div>
+</script>
+<script type="text/javascript">
+    $(function () {
+        var type = lib.getParams('type');
+        var id = lib.getParams('id');
+
+        var getNewsDetail = function () {
+            // 获取新闻详情
+            $.ajax({
+                type: 'GET',
+                url: 'http://www.nchengsheng.com/api/news/info',
+                data: {
+                    id: id
+                },
+                success: function (json) {
+                    json.type = type;
+                    $('.container').html(template('news', json));
+                    $('.news-detail-info').html(json.Data.Content);
+                }
+            });
+        }();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+2017-03-19 07:13:23,111[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 07:13:23,289[1] INFO  - 成功获取管理数据库！
+******************************************** /n2017-03-19 07:13:28,334[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 07:13:28,396[1] INFO  - 成功获取管理数据库！
+2017-03-19 07:14:41,564[9] ERROR - 修改工程案例信息失败，请重试！
+MySql.Data.MySqlClient.MySqlException (0x80004005): Column 'CreateTime' cannot be null
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatusErrors(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatus(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   在 MySql.Data.MySqlClient.MySqlDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.UpdateFromDataTable(DataTable dataTable, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.Update(DataTable dataTable)
+   在 WallE.Data.MySql.DbAccessor.<>c__DisplayClass11_0.<SaveAsync>b__0() 位置 N:\Develop\WebDev\项目开发\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 167
+2017-03-19 07:17:45,841[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 07:17:46,007[1] INFO  - 正在创建管理数据库...
+2017-03-19 07:17:46,011[1] INFO  - 正在创建数据库WallE_MgntDb...
+2017-03-19 07:17:46,013[1] INFO  - 正在初始化管理数据库...
+2017-03-19 07:17:46,173[8] INFO  - 初始化管理数据库成功！
+2017-03-19 07:22:09,160[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 07:22:09,325[1] INFO  - 成功获取管理数据库！
+2017-03-19 07:22:37,177[10] ERROR - 修改工程案例信息失败，请重试！
+System.InvalidOperationException: 集合已修改；可能无法执行枚举操作。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.MoveNext()
+   在 WallE.Platform.DalService.ProductDal.<ModifyProductAsync>d__7.MoveNext() 位置 N:\Develop\WebDev\项目开发\Server\WallE.Platform\DalService\ProductDal.cs:行号 157
+2017-03-19 07:23:17,552[10] ERROR - 修改工程案例信息失败，请重试！
+System.InvalidOperationException: 集合已修改；可能无法执行枚举操作。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.MoveNext()
+   在 WallE.Platform.DalService.ProductDal.<ModifyProductAsync>d__7.MoveNext() 位置 N:\Develop\WebDev\项目开发\Server\WallE.Platform\DalService\ProductDal.cs:行号 157
+2017-03-19 07:24:12,484[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 07:24:12,653[1] INFO  - 成功获取管理数据库！
+2017-03-19 07:26:40,084[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 07:26:40,253[1] INFO  - 成功获取管理数据库！
+2017-03-19 07:48:26,358[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 07:48:26,546[1] INFO  - 成功获取管理数据库！
+2017-03-19 07:51:40,289[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 07:51:40,461[1] INFO  - 成功获取管理数据库！
+2017-03-19 08:02:40,661[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 08:02:40,838[1] INFO  - 成功获取管理数据库！
+2017-03-19 08:11:33,616[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 08:11:33,797[1] INFO  - 成功获取管理数据库！
+2017-03-19 08:42:14,717[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 08:42:14,900[1] INFO  - 成功获取管理数据库！
+2017-03-19 08:54:03,865[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 08:54:04,045[1] INFO  - 成功获取管理数据库！
+2017-03-19 08:55:25,541[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 08:55:25,726[1] INFO  - 成功获取管理数据库！
+2017-03-19 08:59:57,232[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 08:59:57,442[1] INFO  - 成功获取管理数据库！
+2017-03-19 09:09:57,636[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 09:09:57,819[1] INFO  - 成功获取管理数据库！
+2017-03-19 09:28:48,576[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 09:28:48,769[1] INFO  - 成功获取管理数据库！
+2017-03-19 09:32:57,948[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 09:32:58,129[1] INFO  - 成功获取管理数据库！
+2017-03-19 09:41:34,686[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 09:41:34,867[1] INFO  - 成功获取管理数据库！
+2017-03-19 09:45:23,271[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 09:45:23,458[1] INFO  - 成功获取管理数据库！
+2017-03-19 09:49:25,702[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 09:49:25,882[1] INFO  - 成功获取管理数据库！
+2017-03-19 10:28:25,653[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 10:28:25,838[1] INFO  - 成功获取管理数据库！
+2017-03-19 10:30:20,964[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 10:30:21,195[1] ERROR - 无法连接数到据库服务器,请重新设置连接字符串
+MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'hdm140015221' using method 'mysql_native_password' failed with message: Access denied for user 'hdm140015221'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'hdm140015221'@'localhost' (using password: YES)
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Authenticate(String authMethod, Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 WallE.Platform.Support.MgntDbManager.<CreateManagementDb>d__0.MoveNext() 位置 N:\Develop\WebDev\项目开发\Server\WallE.Platform\Support\MgntDbManager.cs:行号 33
+******************************************** /n2017-03-19 10:30:39,161[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 10:30:39,372[1] ERROR - 无法连接数到据库服务器,请重新设置连接字符串
+MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'hdm140015221' using method 'mysql_native_password' failed with message: Access denied for user 'hdm140015221'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'hdm140015221'@'localhost' (using password: YES)
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Authenticate(String authMethod, Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 WallE.Platform.Support.MgntDbManager.<CreateManagementDb>d__0.MoveNext() 位置 N:\Develop\WebDev\项目开发\Server\WallE.Platform\Support\MgntDbManager.cs:行号 33
+******************************************** /n2017-03-19 10:31:55,155[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 10:31:55,445[1] ERROR - 无法连接数到据库服务器,请重新设置连接字符串
+MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication with old password no longer supported, use 4.1 style passwords.
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Authenticate(String authMethod, Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 WallE.Platform.Support.MgntDbManager.<CreateManagementDb>d__0.MoveNext() 位置 N:\Develop\WebDev\项目开发\Server\WallE.Platform\Support\MgntDbManager.cs:行号 33
+******************************************** /n2017-03-19 10:35:22,572[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 10:35:22,912[1] ERROR - 无法连接数到据库服务器,请重新设置连接字符串
+MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication with old password no longer supported, use 4.1 style passwords.
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Authenticate(String authMethod, Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 WallE.Platform.Support.MgntDbManager.<CreateManagementDb>d__0.MoveNext() 位置 N:\Develop\WebDev\项目开发\Server\WallE.Platform\Support\MgntDbManager.cs:行号 33
+******************************************** /n2017-03-19 10:36:57,435[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 10:43:26,825[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 10:43:36,439[1] INFO  - 成功获取管理数据库！
+2017-03-19 10:43:51,065[7] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'hdm140015221_db.category' doesn't exist
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\项目开发\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 271
+2017-03-19 10:43:51,102[5] ERROR - 获取分类信息失败！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.DalService.CategoryDal.<GetCategorysAsync>d__4.MoveNext() 位置 N:\Develop\WebDev\项目开发\Server\WallE.Platform\DalService\CategoryDal.cs:行号 34
+2017-03-19 10:46:34,685[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 10:46:35,384[1] INFO  - 成功获取管理数据库！
+2017-03-19 11:03:00,598[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 11:03:01,323[1] INFO  - 成功获取管理数据库！
+2017-03-19 13:17:56,766[1] INFO  - 正在检测管理数据库是否存在...
+2017-03-19 13:17:57,500[1] INFO  - 成功获取管理数据库！

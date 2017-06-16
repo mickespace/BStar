@@ -1,0 +1,26 @@
+﻿.bstar-history-layout
+{
+    background-color: #f2f2f2;
+    padding-bottom: 20px;
+    min-height: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+.bstar-history-image
+{
+    height: 480px;
+    width: 60%;
+    margin: 20px;
+    position: absolute;
+    left: 0;
+}
+
+.bstar-history-detail-layout
+{
+    height: auto;
+    position: absolute;
+    right: 0;
+    padding: 1%;
+    width: 36%;
+}

@@ -1,0 +1,39 @@
+2016-12-30 00:06:26,330[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-30 00:06:26,511[1] INFO  - 成功获取管理数据库！
+******************************************** /n2016-12-30 00:06:30,994[17] INFO  - 正在检测管理数据库是否存在...
+2016-12-30 00:06:31,059[17] INFO  - 成功获取管理数据库！
+2016-12-30 00:11:41,979[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-30 00:11:42,164[1] INFO  - 成功获取管理数据库！
+2016-12-30 00:17:57,076[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-30 00:17:57,251[1] INFO  - 成功获取管理数据库！
+2016-12-30 00:23:42,770[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-30 00:23:42,943[1] INFO  - 成功获取管理数据库！
+2016-12-30 00:39:14,539[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-30 00:39:14,811[1] INFO  - 成功获取管理数据库！
+2016-12-30 00:50:54,291[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-30 00:50:54,485[1] INFO  - 成功获取管理数据库！
+2016-12-30 00:51:59,869[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-30 00:52:00,078[1] INFO  - 成功获取管理数据库！
+2016-12-30 00:54:15,048[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-30 00:54:15,240[1] INFO  - 成功获取管理数据库！
+2016-12-30 00:58:17,179[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-30 00:58:17,364[1] INFO  - 成功获取管理数据库！
+2016-12-30 01:00:26,091[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-30 01:00:26,268[1] INFO  - 成功获取管理数据库！
+2016-12-30 01:02:17,000[10] ERROR - 生成缩略图失败
+System.ArgumentException: 参数无效。
+   在 System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   在 System.Drawing.Bitmap..ctor(Int32 width, Int32 height)
+   在 WallE.Platform.Business.PictureMgnt.GenerateThumbnail(String imagePath) 位置 N:\Develop\WebDev\Server\WallE.Platform\Business\PictureMgnt.cs:行号 42
+2016-12-30 01:02:48,637[10] ERROR - System.IO.IOException: 文件“N:\Develop\WebDev\Server\WallE.Platform\Images\aaa\完工标识.png”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalDelete(String path, Boolean checkHost)
+   在 System.IO.File.Delete(String path)
+   在 WallE.Platform.Support.FileManager.SaveFile(String categoryId, String name, Byte[] fileContent) 位置 N:\Develop\WebDev\Server\WallE.Platform\Support\FileManager.cs:行号 71
+2016-12-30 01:02:56,023[9] ERROR - System.IO.IOException: 文件“N:\Develop\WebDev\Server\WallE.Platform\Images\aaa\完工标识.png”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalDelete(String path, Boolean checkHost)
+   在 System.IO.File.Delete(String path)
+   在 WallE.Platform.Support.FileManager.SaveFile(String categoryId, String name, Byte[] fileContent) 位置 N:\Develop\WebDev\Server\WallE.Platform\Support\FileManager.cs:行号 71
+2016-12-30 01:07:35,095[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-30 01:07:35,279[1] INFO  - 成功获取管理数据库！

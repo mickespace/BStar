@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FFFC05CF-0C70-4F29-A6B7-ABADAB9B400D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WallE.Data.MySql</RootNamespace>
+    <AssemblyName>WallE.Data.MySql</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assist\ColumnInfo.cs" />
+    <Compile Include="Assist\Conv.cs" />
+    <Compile Include="Assist\NotifyObject.cs" />
+    <Compile Include="Assist\PinYinConverter.cs" />
+    <Compile Include="Assist\SqlDbUtil.cs" />
+    <Compile Include="Assist\SqlUtil.cs" />
+    <Compile Include="Assist\TableInfo.cs" />
+    <Compile Include="Assist\Util.cs" />
+    <Compile Include="CoreUtil.cs" />
+    <Compile Include="Foundations\CommonExtension.cs" />
+    <Compile Include="Foundations\DataRecord.cs" />
+    <Compile Include="Foundations\Interfaces\IPropertyMapper.cs" />
+    <Compile Include="Foundations\PrimaryKey.cs" />
+    <Compile Include="Foundations\Result.cs" />
+    <Compile Include="Foundations\TableStatus.cs" />
+    <Compile Include="Implementations\_Accessor\DbAccessor.cs" />
+    <Compile Include="Implementations\_Accessor\DbAccessorMgnt.cs" />
+    <Compile Include="Implementations\_Accessor\IDataAccessor.cs" />
+    <Compile Include="Implementations\_Accessor\IDataAccessorMgnt.cs" />
+    <Compile Include="Implementations\_IdMgnt\IRecordIdManager.cs" />
+    <Compile Include="Implementations\_IdMgnt\RecordIdManager.cs" />
+    <Compile Include="Implementations\_IdMgnt\RecordIdModel.cs" />
+    <Compile Include="Implementations\_Log\ILog.cs" />
+    <Compile Include="Implementations\_Log\ILogManager.cs" />
+    <Compile Include="Implementations\_Log\Log4Net.cs" />
+    <Compile Include="Implementations\_Log\LoggerHelper.cs" />
+    <Compile Include="Implementations\_Log\LogItem.cs" />
+    <Compile Include="Implementations\_Log\LogManager.cs" />
+    <Compile Include="Implementations\_Log\LogType.cs" />
+    <Compile Include="Implementations\_SqlConn\ConnManager.cs" />
+    <Compile Include="Implementations\_SqlConn\IConnManager.cs" />
+    <Compile Include="M.cs" />
+    <Compile Include="Models\ApiResult.cs" />
+    <Compile Include="Models\EntityBase.cs" />
+    <Compile Include="Models\UserBriefInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="log.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Enums\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

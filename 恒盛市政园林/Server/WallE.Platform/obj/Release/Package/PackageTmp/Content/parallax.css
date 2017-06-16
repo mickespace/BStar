@@ -1,0 +1,135 @@
+﻿
+/* Slider Style */
+.pxs_container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pxs_bg {
+    background: transparent url(images/solution/bg.png) repeat top left;
+}
+
+    .pxs_bg div {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: auto; /*1264px window width times number of images*/
+        height: 500px;
+        background-repeat: repeat;
+        background-position: top left;
+        background-color: transparent;
+    }
+
+    .pxs_bg .pxs_bg1 {
+        background-image: url(images/solution/bg2.jpg);
+        /*left negative 1/8 of ww*/
+    }
+
+    .pxs_bg .pxs_bg2 {
+        background-image: url(images/solution/bg1.png);
+             opacity: 0.4;
+        /*left negative 1/4 of ww*/
+    }
+
+    .pxs_bg .pxs_bg3 {
+        /*left negative 1/2 of ww*/
+        background-image: url(images/solution/bg1.png);
+        opacity: 0.0;
+        /*left negative 1/4 of ww*/
+    }
+
+.pxs_slider_wrapper {
+    display: none;
+}
+
+.pxs_container ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul.pxs_slider {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 500px;
+}
+
+    ul.pxs_slider li {
+        height: 500px;
+        float: left;
+        position: relative;
+    }
+
+        ul.pxs_slider li img 
+        {
+            width: 900px;
+            height: 400px;
+            display: block;
+            margin: 35px auto 0px auto;
+            -moz-box-shadow: 0px 0px 0px #222;
+            -webkit-box-shadow: 0px 0px 0px #222;
+            box-shadow: 0px 0px 0px #222;
+        }
+
+ul.pxs_thumbnails {
+    height: 35px;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+}
+
+    ul.pxs_thumbnails li {
+        position: absolute;
+        display: block;
+    }
+
+        ul.pxs_thumbnails li img {
+            cursor: pointer;
+            display: block;
+            opacity: 0.7;
+        }
+
+        ul.pxs_thumbnails li.selected img {
+            opacity: 1.0;
+        }
+
+.pxs_navigation span {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    opacity: 0.6;
+    top: 200px;
+    cursor: pointer;
+}
+
+    .pxs_navigation span:hover {
+        opacity: 0.9;
+    }
+
+    .pxs_navigation span.pxs_prev {
+        background: #000 url(images/solution/prev.png) no-repeat center center;
+    }
+
+    .pxs_navigation span.pxs_next {
+        background: #000 url(images/solution/next.png) no-repeat center center;
+    }
+
+.pxs_loading {
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 15px 15px 50px;
+    position: absolute;
+    background: #333 url(images/solution/ajax-loader.gif) no-repeat 10px 50%;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    opacity: 0.7;
+    width: 180px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -90px;
+}

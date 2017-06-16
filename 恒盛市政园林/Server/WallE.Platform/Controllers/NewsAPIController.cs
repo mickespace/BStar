@@ -1,0 +1,109 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Web.Http;
+using WallE.Data.MySql;
+using WallE.Platform.DalService;
+using WallE.Platform.Models;
+
+namespace WallE.Platform.Controllers
+{
+    /// <summary>
+    /// 新闻管理
+    /// </summary>
+    [RoutePrefix("api/news")]
+    // ReSharper disable once InconsistentNaming
+    public class NewsAPIController : ApiController
+    {
+        /// <summary>
+        /// 获取新闻列表(pageIndex为1,pageSize为-1时则获取所有)
+        /// </summary>
+        /// <param name="pageIndex">页索引（从1开始）</param>
+        /// <param name="pageSize">页记录数量</param>
+        /// <param name="category">分类编号</param>
+        [HttpGet]
+        [Route("list")]
+        public async Task<ApiResult<List<NewsModel>>> NewsList(int pageIndex, int pageSize, string category = null)
+        {
+            var search = new SearchParams { PageIndex = pageIndex, PageSize = pageSize, Category = category };
+            var newsList = await NewsDal.Ins.GetNewsListAsync(search);
+            return new ApiResult<List<NewsModel>>(newsList) {Count = search.TotalCount};
+        }
+
+        /// <summary>
+        /// 获取新闻分类
+        /// </summary>
+        [HttpGet]
+        [Route("categorys")]
+        public async Task<ApiResult<List<Category>>> CategoryList()
+        {
+            var categorys = await CategoryDal.Ins.GetCategorysAsync((int)CategoryType.News);
+            return new ApiResult<List<Category>>(categorys);
+        }
+
+        /// <summary>
+        /// 获取新闻详细信息
+        /// </summary>
+        /// <param name="id">新闻编号</param>
+        [HttpGet]
+        [Route("info")]
+        public async Task<ApiResult<News>> NewsDetial(string id)
+        {
+            var model = await NewsDal.Ins.GetNewsInfoAsync(id);
+            return new ApiResult<News>(model);
+        }
+
+        /// <summary>
+        /// 上线与下线
+        /// </summary>
+        /// <param name="accessToken">令牌</param>
+        /// <param name="id">编号</param>
+        /// <param name="status">状态(true下线false上线)</param>
+        [HttpPost]
+        [Route("update")]
+        public async Task<ApiResult> ModifyStatus(string accessToken, string id, bool status)
+        {
+            return await NewsDal.Ins.ModifyStatusAsync(id, status);
+        }
+
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <param name="accessToken">令牌</param>
+        /// <param name="id">编号</param>
+        [HttpPost]
+        [Route("delete")]
+        public async Task<ApiResult> Delete(string accessToken, string id)
+        {
+            return await NewsDal.Ins.DeleteNewsAsync(id);
+        }
+
+        /// <summary>
+        /// 删除新分类
+        /// </summary>
+        /// <param name="accessToken">令牌</param>
+        /// <param name="categoryId"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("delete_category")]
+        public async Task<ApiResult> DeleteCategory(string accessToken, string categoryId)
+        {
+            var r = await CategoryDal.Ins.DeleteCategoryAsync(categoryId);
+            return r ? new ApiResult() : new ApiResult(new Exception("删除分类失败！"));
+        }
+
+        /// <summary>
+        /// 添加新分类
+        /// </summary>
+        /// <param name="accessToken">令牌</param>
+        /// <param name="category"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("add_category")]
+        public async Task<ApiResult> AddCategory(string accessToken, string category)
+        {
+            var record = await CategoryDal.Ins.AddCategoryAsync((int)CategoryType.News, category);
+            return record == null ? new ApiResult(new Exception("添加新分类失败！")) : new ApiResult<Category>(record);
+        }
+    }
+}

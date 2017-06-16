@@ -1,0 +1,14 @@
+﻿.bstar-admin-noticedetail-layout {
+    /*width: 80%;*/
+    margin: 0 20px;
+}
+.bstar-admin-noticedetail-description
+{
+        width: 100%;
+    height: 100px;
+}
+.bstar-admin-noticedetail-content {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+}

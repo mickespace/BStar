@@ -1,0 +1,239 @@
+﻿
+
+
+.bstar-home-content-show
+{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-color: #2493cd;
+}
+.bstar-home-content-show-content
+{
+    position: relative;
+    height: 400px;
+    z-index: 1;
+}
+
+.bstar-home-content-show-detail
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    color: white;
+}
+
+.bstar-home-content-show-detail h1
+{
+    font-size: 30px;
+}
+
+.bstar-home-content-show-detail ul
+{
+    list-style: none;
+}
+
+.bstar-home-content-show-detail ul li
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.bstar-home-content-show-image
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 280px;
+    width: auto;
+}
+/*首页--展示新闻--news样式*/
+.bstar-home-content-news
+{
+    height: auto;
+    width: 100%;
+    clear: both;
+    margin-top: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+
+.bstar-home-content-news-title
+{
+    height: 50px;
+    width: 100%;
+}
+
+.bstar-home-content-news-main
+{
+    height: 305px;
+    width: 510px;
+    float: left;
+}
+
+.bstar-home-content-news-main-item
+{
+    height: 100%;
+    width: 250px;
+    text-align: center;
+      padding: 3px;
+    float: left;
+    margin-right: 3px;
+    background-color: #f1f1f1;
+}
+.bstar-home-content-news-main-item:hover
+{
+    margin-top: -10px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-top: 5px solid #2493cd;
+}
+
+.bstar-home-content-news-main-image
+{
+    width: 240px;
+    height: 160px;
+    padding: 5px 2px;
+}
+
+
+.bstar-home-content-news-subhead
+{
+    height: 310px;
+    width: 650px;
+    float: left;
+}
+
+.bstar-home-content-news-item
+{
+    width: 100%;
+    clear: both;
+    height: 150px;
+    margin-bottom: 5px;
+    
+    overflow: hidden;
+    padding: 3px;
+    background-color: #f1f1f1;
+}
+.bstar-home-content-news-item:hover
+{
+    background-color: white;
+     border: 1px solid #cccccc;
+    border-left: 5px solid #2493cd;
+      margin-left: 20px;
+}
+
+
+.bstar-home-content-news-image
+{
+    width: 210px;
+    height: 150px;
+    margin-right: 30px;
+    padding: 5px 0;
+    float: left;
+}
+
+.bstar-home-content-news-detail
+{
+    height: auto;
+    width: auto;
+}
+/*首页--展示方案--solution样式*/
+.bstar-home-content-solution
+{
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    background-color: white;
+    clear: both;
+}
+
+.bstar-home-content-solution-image
+{
+    width: 650px;
+    height: 350px;
+}
+
+.bstar-home-content-solution-image-small
+{
+    width: 120px;
+    height: 70px;
+}
+
+/*首页--展示工程案例--product样式*/
+.bstar-home-content-product
+{
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    background-color: white;
+    clear: both;
+}
+
+.bstar-home-content-product-title
+{
+    height: 50px;
+    width: 100%;
+}
+
+.bstar-home-content-product-category
+{
+    width: 98%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    clear: both;
+}
+
+.bstar-home-content-product-item
+{
+    position: relative;
+    height: 250px;
+    float: left;
+    width: 32%;
+    margin-right: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bstar-home-content-product-item img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.bstar-home-content-product-item img:hover
+{
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+.bstar-home-content-product-item section
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+

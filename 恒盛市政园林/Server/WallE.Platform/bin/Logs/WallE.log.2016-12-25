@@ -1,0 +1,518 @@
+2016-12-25 10:56:32,702[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 10:56:32,973[1] INFO  - 成功获取管理数据库！
+******************************************** /n2016-12-25 10:56:37,703[12] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 10:56:37,782[12] INFO  - 成功获取管理数据库！
+2016-12-25 10:58:36,419[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 10:58:36,575[1] INFO  - 成功获取管理数据库！
+2016-12-25 10:58:53,583[10] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 10:58:53,632[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 12:40:45,393[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 12:40:45,555[1] INFO  - 成功获取管理数据库！
+2016-12-25 12:41:56,100[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 12:41:56,277[1] INFO  - 成功获取管理数据库！
+2016-12-25 12:42:28,232[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 12:42:28,395[1] INFO  - 成功获取管理数据库！
+2016-12-25 12:43:24,468[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 12:43:24,646[1] INFO  - 成功获取管理数据库！
+2016-12-25 12:43:39,020[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 12:43:39,052[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 32
+2016-12-25 12:44:59,922[10] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 12:44:59,946[10] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 32
+2016-12-25 12:46:36,676[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 12:46:36,849[1] INFO  - 成功获取管理数据库！
+2016-12-25 12:46:58,686[11] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 12:46:58,729[11] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 32
+2016-12-25 13:24:20,640[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 13:24:20,830[1] INFO  - 成功获取管理数据库！
+2016-12-25 13:24:36,788[12] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 13:24:36,820[12] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 32
+2016-12-25 13:25:03,260[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 13:25:03,425[1] INFO  - 成功获取管理数据库！
+2016-12-25 13:25:18,312[10] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 13:25:18,360[10] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 32
+2016-12-25 13:26:44,312[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 13:26:44,468[1] INFO  - 成功获取管理数据库！
+2016-12-25 13:26:56,528[8] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 13:26:56,572[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 13:27:17,545[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 13:27:17,568[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:13:09,399[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 20:13:09,591[1] INFO  - 成功获取管理数据库！
+2016-12-25 20:13:26,297[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:13:26,347[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:17:37,245[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 20:17:37,406[1] INFO  - 成功获取管理数据库！
+2016-12-25 20:17:44,091[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:17:44,138[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:19:07,511[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 20:19:07,678[1] INFO  - 成功获取管理数据库！
+2016-12-25 20:19:15,007[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:19:15,040[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:19:33,217[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:19:33,238[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:22:01,563[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 20:22:01,723[1] INFO  - 成功获取管理数据库！
+2016-12-25 20:22:06,708[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:22:06,741[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:22:38,007[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:22:38,028[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:24:57,852[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 20:24:58,006[1] INFO  - 成功获取管理数据库！
+2016-12-25 20:25:03,753[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:25:03,787[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:25:24,767[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:25:24,789[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:27:42,462[8] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:27:42,498[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:28:37,134[8] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:28:37,156[8] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:29:04,345[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:29:04,366[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:29:13,333[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:29:13,363[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:30:17,781[8] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:30:17,803[8] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:30:39,272[8] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:30:39,302[8] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:31:03,673[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:31:03,694[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:33:35,718[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 20:33:35,883[1] INFO  - 成功获取管理数据库！
+2016-12-25 20:33:42,132[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:33:42,169[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:34:11,169[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:34:11,194[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:35:38,501[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:35:38,527[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:38:26,609[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:38:26,631[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:39:52,151[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:39:52,172[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 20:45:57,807[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 20:45:57,965[1] INFO  - 成功获取管理数据库！
+2016-12-25 20:46:05,143[9] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 20:46:05,176[9] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 21:12:01,756[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 21:12:01,919[1] INFO  - 成功获取管理数据库！
+2016-12-25 21:12:20,739[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 21:12:20,897[1] INFO  - 成功获取管理数据库！
+2016-12-25 21:13:42,334[1] INFO  - 正在检测管理数据库是否存在...
+2016-12-25 21:13:42,492[1] INFO  - 成功获取管理数据库！
+2016-12-25 21:18:38,626[7] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 21:18:38,661[7] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 21:20:38,200[20] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 21:20:38,222[20] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 21:21:57,432[22] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 21:21:57,460[22] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 21:22:02,080[22] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 21:22:02,102[22] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31
+2016-12-25 21:22:53,816[22] ERROR - MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where [] = '' ORDER BY [] DESC' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 WallE.Data.MySql.DbAccessor.ExcuteSqlReader[T](String sqlStr, Func`2 converterFunc) 位置 N:\Develop\WebDev\Server\WallE.Data.MySql\Implementations\_Accessor\DbAccessor.cs:行号 268
+2016-12-25 21:22:53,841[22] ERROR - 获取素材数据失败,请重试！
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 WallE.Platform.Controllers.PictureViewController.<List>d__0.MoveNext() 位置 E:\Website\Server\WallE.Platform\Controllers\PictureViewController.cs:行号 31

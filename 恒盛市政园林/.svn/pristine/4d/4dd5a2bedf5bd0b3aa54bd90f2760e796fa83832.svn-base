@@ -1,0 +1,65 @@
+﻿@model BSTAR.Entity.BStarUser
+@{
+    var action = Model.Id == 0 ? "/AccountBstar/Add" : "/AccountBstar/Update";
+    Layout = "../Shared/_layoutBstar.cshtml";
+}
+<style>
+    .bstar-account-label {
+        width: 100%;
+        height: auto;
+    }
+      .bstar-account-label label {
+          width: 300px;
+          text-align: right;
+          padding-right: 10px;
+          height: 50px;
+          line-height: 50px;
+      }
+</style>
+<div class="admin-content">
+    <form id="myForm" method="POST" action="@action"  >
+    <div class="am-cf am-padding">
+        <div class="am-fl am-cf">
+            <strong class="am-text-primary am-text-lg">用户管理</strong> / <small>用户编辑</small>
+        </div>
+        <div data-am-sticky="{animation: 'slide-top'}" style="text-align: right; margin-right: 10%">
+            <button type="button" class="am-btn am-btn-primary">
+                保存</button>
+            <a href="@Url.Action("Query", "AccountBstar")">
+                <button type="button" class="am-btn am-btn-secondary">
+                    取消</button></a>
+        </div>
+    </div>
+    <hr />
+    <div class="bstar-account-label">
+            <div>
+                <label>
+                    用户名</label>
+                <input type="text"  name="UserName" placeholder="用户名" value="@Model.UserName">
+                <small>输入你的名字，让我们记住你。</small>
+            </div>
+            <div>
+                <label>
+                    用户密码</label>
+                <input type="password" name="Password" placeholder="密码" >
+            </div>
+            <div>
+                <label>
+                    电话</label>
+                <input type="email" name="UserPhone" placeholder="手机号码" value="@Model.UserPhone">
+            </div>
+            <div>
+                <label>
+                    电子邮件</label>
+                <input type="email" name="Email" placeholder="电子邮件" value="@Model.Email">
+                <small>邮箱你懂得...</small>
+            </div>
+        </div>
+    <input type="hidden" name="Id" value="@Model.Id"/>
+    <input type="hidden" name="UserRole" value="@Model.UserRole"/>
+    <input type="hidden" name="Status" value="@Model.Status" />
+    <input type="hidden" name="RegisterTime" value="@Model.RegisterTime"/>
+    <input type="hidden" name="LoginTime" value="@Model.LoginTime" />
+    </form>
+</div>
+<!-- content end -->

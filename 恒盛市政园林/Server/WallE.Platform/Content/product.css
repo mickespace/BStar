@@ -1,0 +1,126 @@
+﻿/**************工程案例展示样式****************/
+.bstar-product-show-layout {
+    position: absolute;
+    height: 550px;
+    width: 100%;
+    padding: 0;
+    align-content: center;
+    clear: both;
+    float: none;
+}
+
+.bstar-product-show-image {
+    position: absolute;
+    top: 0;
+    height: 400px;
+    width: 1180px;
+}
+
+
+.bstar-product-list {
+    width: 950px;
+    padding: 10px 0 0 10px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    margin-left: 140px;
+    background-color: #dddddd;
+}
+
+    .bstar-product-list ul {
+        list-style: none;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+        .bstar-product-list ul li {
+            width: 310px;
+            height: auto;
+            padding: 0 5px;
+            text-align: center;
+            float: left;
+        }
+
+            .bstar-product-list ul li img {
+                width: 300px;
+                height: 200px;
+            }
+
+
+
+.bstar-product-example {
+    width: 100%;
+    height: 350px;
+    clear: both;
+    padding: 20px 0 20px 0;
+}
+
+    .bstar-product-example div {
+        width: 500px;
+        height: 100%;
+        vertical-align: middle;
+         margin-left: 2%;
+        color: #666666;
+        float: left;
+        position: relative;
+    }
+
+    .bstar-product-example div button {
+        height: 35px;
+        width: 100px;
+        margin: 10px 0;
+        position: absolute;
+        bottom: 0;
+    }
+    .bstar-product-example img {
+        height: 100%;
+        width: 50%;
+        margin-left: 2%;
+        float: left;
+    }
+/**************工程案例详细列表****************/
+.bstar-product-detail-top {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bstar-product-detail-image {
+    width: 400px;
+    height: 210px;
+    padding-right: 50px;
+    text-align: center;
+    margin: auto;
+    float: left;
+}
+
+    .bstar-product-detail-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+.bstar-product-detail-info {
+    float: left;
+    width: 780px;
+    height: 100%;
+    padding-left: 30px;
+    vertical-align: middle;
+}
+
+    .bstar-product-detail-info div {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        color: #666666;
+        border-bottom: 2px dashed #CCCCCC;
+    }
+
+.bstar-product-detail-content {
+    clear: both;
+    float: none;
+    padding-top: 30px;
+}
