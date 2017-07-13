@@ -1,0 +1,17 @@
+<div class="app-list-container">
+  <div class="app-list-header">
+    <h2>当前可供使用的应用</h2>
+    <p>选择你需要的应用，强大你的BIM-STAR平台。</p>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6 col-sm-3 col-md-2" *ngFor="let app of applist">
+      <div class="app-img">
+        <img class="app-icon" src="{{app.DisplayIcon}}">
+      </div>
+      <div class="app-title">
+        <a [routerLink]="['/appdetail',app._id]">{{app.DisplayName}}</a>
+      </div>
+    </div>
+  </div>
+</div>

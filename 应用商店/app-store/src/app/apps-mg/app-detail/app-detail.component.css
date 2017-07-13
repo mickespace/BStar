@@ -1,0 +1,94 @@
+/*row上下间距*/
+
+.row-split {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.app-show-div {
+  height: 150px;
+}
+
+.app-img {
+  width: 100%;
+  height: 100%;
+}
+
+.app-name {
+  margin-top: 0;
+}
+
+.app-rate {
+  margin-bottom: 27px;
+}
+
+rating {
+  color: #D1482E;
+}
+
+.btn-app {
+  background: #0099FF;
+  color: #FFF;
+  width: 100px;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.btn-app:hover {
+  background: #0074C1;
+  color: #FFF;
+}
+
+.app-pictures {
+  background: #0099FF;
+  margin-left: -10%;
+  width: 90%;
+  height: 90%;
+}
+
+
+/*功能介绍*/
+
+.app-intro {
+  margin-top: 4%;
+  font-size: 16px;
+}
+
+
+/*评论*/
+
+.starNm-big {
+  text-align: center;
+  font-size: 100px;
+  font-weight: lighter;
+}
+
+.star-desc {
+  text-align: center;
+  font-size: 14px;
+}
+
+.app-comment {
+  background: #FFF;
+  height: 80px;
+  margin-top: 10px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+
+.comment-star .comment-time .commnet-user {
+  margin: 0 10px;
+}
+
+.comment-star {
+  font-size: 14px;
+}
+
+.comment-title .comment-content {
+  margin: 0 10px;
+}
+
+.comment-title {
+  font-weight: 500;
+}

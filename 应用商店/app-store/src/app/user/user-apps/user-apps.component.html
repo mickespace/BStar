@@ -1,0 +1,18 @@
+<div>
+  <h4>我的应用</h4>
+  <div class="row app-item" *ngFor="let app of applist">
+    <div class="col-xs-2 item-img">
+      <img class="item-icon" src="{{app.DisplayIcon}}">
+    </div>
+    <div class="col-xs-4">
+      <div class="item-name">{{app.DisplayName}}</div>
+    </div>
+    <div class="col-xs-2">
+      <div *ngIf="app.Price!=0" class="item-price">{{app.Price}}元</div>
+      <div *ngIf="app.Price==0" class="item-price">免费的应用</div>
+    </div>
+    <div class="col-xs-4 item-detail">
+      <a [routerLink]="['/appdetail',app._id]">查看详情^_^</a>
+    </div>
+  </div>
+</div>

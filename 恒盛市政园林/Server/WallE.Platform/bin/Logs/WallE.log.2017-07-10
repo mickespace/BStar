@@ -1,0 +1,106 @@
+2017-07-10 16:16:12,306[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 16:16:13,167[1] ERROR - 无法连接数到据库服务器,请重新设置连接字符串
+MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'root'@'localhost' (using password: YES)
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Authenticate(String authMethod, Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 WallE.Platform.Support.MgntDbManager.<CreateManagementDb>d__0.MoveNext() 位置 E:\Git\BStar2\恒盛市政园林\Server\WallE.Platform\Support\MgntDbManager.cs:行号 33
+******************************************** /n2017-07-10 16:22:30,532[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 16:22:30,752[1] ERROR - 无法连接数到据库服务器,请重新设置连接字符串
+MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'root'@'localhost' (using password: YES)
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Authenticate(String authMethod, Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 WallE.Platform.Support.MgntDbManager.<CreateManagementDb>d__0.MoveNext() 位置 E:\Git\BStar2\恒盛市政园林\Server\WallE.Platform\Support\MgntDbManager.cs:行号 33
+******************************************** /n2017-07-10 16:25:54,788[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 16:25:54,993[1] ERROR - 无法连接数到据库服务器,请重新设置连接字符串
+MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'root'@'localhost' (using password: YES)
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Authenticate(String authMethod, Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 WallE.Platform.Support.MgntDbManager.<CreateManagementDb>d__0.MoveNext() 位置 E:\Git\BStar2\恒盛市政园林\Server\WallE.Platform\Support\MgntDbManager.cs:行号 33
+******************************************** /n2017-07-10 16:28:28,512[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 16:28:28,790[1] INFO  - 正在创建管理数据库...
+2017-07-10 16:28:28,802[1] INFO  - 正在创建数据库asdf...
+2017-07-10 16:28:28,811[1] INFO  - 正在初始化管理数据库...
+2017-07-10 16:28:30,323[9] INFO  - 初始化管理数据库成功！
+2017-07-10 16:28:55,534[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 16:28:55,712[1] INFO  - 成功获取管理数据库！
+2017-07-10 16:51:37,533[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 16:51:37,678[1] INFO  - 成功获取管理数据库！
+2017-07-10 16:52:42,778[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 16:52:42,962[1] INFO  - 成功获取管理数据库！
+2017-07-10 16:54:28,054[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 16:54:28,199[1] INFO  - 成功获取管理数据库！
+2017-07-10 16:55:24,950[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 16:55:25,088[1] INFO  - 成功获取管理数据库！
+2017-07-10 16:57:49,254[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 16:57:49,424[1] INFO  - 成功获取管理数据库！
+2017-07-10 17:33:48,818[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 17:33:49,084[1] INFO  - 成功获取管理数据库！
+2017-07-10 17:34:46,444[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 17:34:46,574[1] INFO  - 成功获取管理数据库！
+******************************************** /n2017-07-10 17:43:13,084[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 17:43:13,221[1] INFO  - 成功获取管理数据库！
+2017-07-10 17:44:01,290[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 17:44:01,422[1] INFO  - 成功获取管理数据库！
+2017-07-10 17:51:01,348[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 17:51:01,485[1] INFO  - 成功获取管理数据库！
+2017-07-10 17:51:56,138[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 17:51:56,268[1] INFO  - 正在创建管理数据库...
+2017-07-10 17:51:56,278[1] INFO  - 正在创建数据库chenjunliang...
+2017-07-10 17:51:56,280[1] INFO  - 正在初始化管理数据库...
+2017-07-10 17:51:58,202[8] INFO  - 初始化管理数据库成功！
+2017-07-10 17:52:54,143[1] INFO  - 正在检测管理数据库是否存在...
+2017-07-10 17:52:54,284[1] INFO  - 正在创建管理数据库...
+2017-07-10 17:52:54,287[1] INFO  - 正在创建数据库chenjunliang...
+2017-07-10 17:52:54,288[1] INFO  - 正在初始化管理数据库...
+2017-07-10 17:52:56,234[8] INFO  - 初始化管理数据库成功！

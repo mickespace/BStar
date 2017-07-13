@@ -64,7 +64,7 @@ namespace WallE.Platform.Support
         /// <returns></returns>
         private async static Task<Result> CreateMgntDatabaseAsync(string dbName)
         {
-            var fileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Mgnt.sql");
+            var fileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bstar.sql");
             if (!File.Exists(fileName))
                 return new Result(new FileNotFoundException(fileName + "未找到！"));
             //创建数据库

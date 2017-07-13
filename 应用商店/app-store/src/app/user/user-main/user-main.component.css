@@ -1,0 +1,72 @@
+div {
+  display: block;
+}
+
+.uc-box {
+  background: #fff;
+}
+
+
+/*左侧导航栏*/
+
+.uc-sub-box {
+  padding: 36px 0;
+  width: 100%;
+}
+
+.uc-nav-box {
+  margin-bottom: 12px;
+}
+
+.box-hd {
+  height: 52px;
+}
+
+.uc-nav-box {
+  margin-bottom: 12px;
+}
+
+.title {
+  margin: 0 48px 2px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 52px;
+  color: #333;
+}
+
+.uc-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.uc-nav-list li {
+  padding: 6px 48px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+a {
+  color: #757575;
+  text-decoration: none;
+}
+
+
+/*右侧body*/
+
+.uc-main-box {
+  padding: 36px 0;
+  width: 100%;
+  display: block;
+}
+
+.uc-content-box {
+  margin: 0 48px;
+}
+
+.box-bd {
+  padding-top: 12px;
+}

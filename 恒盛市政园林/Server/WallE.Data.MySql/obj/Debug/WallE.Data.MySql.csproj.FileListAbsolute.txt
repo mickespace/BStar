@@ -84,3 +84,13 @@ N:\Develop\WebDev\Project\恒盛市政园林\Server\WallE.Data.MySql\obj\Debug\W
 N:\Develop\WebDev\Project\恒盛市政园林\Server\WallE.Data.MySql\obj\Debug\WallE.Data.MySql.pdb
 N:\Develop\WebDev\Project\恒盛市政园林\Server\WallE.Data.MySql\obj\Debug\WallE.Data.MySql.csprojResolveAssemblyReference.cache
 N:\Develop\WebDev\Project\恒盛市政园林\Server\WallE.Data.MySql\bin\Debug\MySql.Data.dll
+E:\Git\BStar2\恒盛市政园林\Server\WallE.Data.MySql\bin\Debug\log.config
+E:\Git\BStar2\恒盛市政园林\Server\WallE.Data.MySql\bin\Debug\WallE.Data.MySql.dll
+E:\Git\BStar2\恒盛市政园林\Server\WallE.Data.MySql\bin\Debug\WallE.Data.MySql.pdb
+E:\Git\BStar2\恒盛市政园林\Server\WallE.Data.MySql\bin\Debug\log4net.dll
+E:\Git\BStar2\恒盛市政园林\Server\WallE.Data.MySql\bin\Debug\MySql.Data.dll
+E:\Git\BStar2\恒盛市政园林\Server\WallE.Data.MySql\bin\Debug\log4net.xml
+E:\Git\BStar2\恒盛市政园林\Server\WallE.Data.MySql\bin\Debug\MySql.Data.xml
+E:\Git\BStar2\恒盛市政园林\Server\WallE.Data.MySql\obj\Debug\WallE.Data.MySql.csprojResolveAssemblyReference.cache
+E:\Git\BStar2\恒盛市政园林\Server\WallE.Data.MySql\obj\Debug\WallE.Data.MySql.dll
+E:\Git\BStar2\恒盛市政园林\Server\WallE.Data.MySql\obj\Debug\WallE.Data.MySql.pdb
