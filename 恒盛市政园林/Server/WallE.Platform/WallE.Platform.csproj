@@ -148,7 +148,9 @@
     <Content Include="bstar.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ConnectionCenter.xml" />
+    <Content Include="ConnectionCenter.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Content\BstarNoticeDetial.css" />
     <Content Include="Content\BstarSite.css" />
     <Content Include="Content\company.css" />
