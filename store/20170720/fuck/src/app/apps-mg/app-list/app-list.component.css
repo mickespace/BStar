@@ -1,0 +1,35 @@
+.app-list-container {
+  margin-top: 10px;
+}
+
+.app-list-header {
+  margin-bottom: 40px;
+}
+
+.app-img {
+  height: 120px;
+  margin-bottom: 5px;
+}
+
+.app-icon {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  display: table-cell;
+}
+
+.app-title {
+  text-align: center;
+  color: darkolivegreen;
+  margin-bottom: 15px;
+}
+
+.app-title a {
+  color: black;
+  text-decoration: none;
+}
+
+.app-title a:hover {
+  color: #0099FF;
+  text-decoration: none;
+}

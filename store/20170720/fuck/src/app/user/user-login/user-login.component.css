@@ -1,0 +1,51 @@
+.main-login {
+  margin-top: 8%;
+  height: 600px;
+  background-image: url('../../../assets/imgs/login-page.png');
+  background-repeat: repeat;
+}
+
+.login-desc {}
+
+.login-form {
+  margin-top: 8%;
+  margin-right: 8%;
+  float: right;
+  color: #000000;
+  background: #fff;
+  height: 400px;
+  width: 350px;
+  border: 0 inset black;
+}
+
+.login-group {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.login-input {
+  height: 40px;
+}
+
+.login-valid {
+  margin-top: 5px;
+  margin-left: 59px;
+}
+
+.login-icon {
+  top: 0px;
+  line-height: 20px;
+}
+
+.login-btn {
+  font-size: 16px;
+  height: 40px;
+  width: 310px;
+}
+
+.login-errorTip {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}

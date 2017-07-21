@@ -1,0 +1,30 @@
+<div class="row main-login">
+  <div class="col-xs-6 login-desc"></div>
+  <div class="col-xs-6 col-sm-12 col-md-12 login-form">
+    <h2 class="text-center">登录</h2>
+    <form #form="ngForm" (ngSubmit)="form.form.valid && doLogin()" novalidate class="form-horizontal" role="form">
+      <div class="form-group" [ngClass]="{ 'has-error': form.submitted && !userName.valid }">
+        <div class="input-group login-group">
+          <span class="input-group-addon glyphicon glyphicon-user login-icon" id="basic-addon1"></span>
+          <input required name="userName" [(ngModel)]="userRe.userName" #userName="ngModel" type="text" class="form-control login-input"
+            placeholder="手机号/邮箱" aria-describedby="basic-addon1">
+        </div>
+        <div *ngIf="form.submitted && !userName.valid" class="text-danger login-valid">请输入您的手机号或邮箱</div>
+      </div>
+      <div class="form-group" [ngClass]="{ 'has-error': form.submitted && !password.valid }">
+        <div class="input-group login-group">
+          <span class="input-group-addon glyphicon glyphicon-lock login-icon" id="basic-addon2"></span>
+          <input required minlength="6" [(ngModel)]="userRe.password" name="password" #password="ngModel" type="password" class="form-control login-input"
+            placeholder="密码" aria-describedby="basic-addon2">
+        </div>
+        <div *ngIf="form.submitted && !password.valid " class="text-danger login-valid">请输入至少6位密码</div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-group login-group">
+          <button type="submit" [disabled]="loading" class="btn btn-success login-btn">登录</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

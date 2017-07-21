@@ -1,0 +1,37 @@
+.app-item {
+  border: 1px solid #e0e0e0;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.item-img {
+  height: 70px;
+}
+
+.item-icon {
+  margin-top: 5px;
+  height: 100%;
+}
+
+.item-name {
+  margin-top: 30px;
+}
+
+.item-price {
+  margin-top: 30px;
+  color: #8bc34a;
+}
+
+.item-detail {
+  margin-top: 30px;
+}
+
+.item-detail a {
+  text-decoration: none;
+  float: right;
+}
+
+.item-detail a:hover {
+  text-decoration: none;
+  color: #ff753f;
+}

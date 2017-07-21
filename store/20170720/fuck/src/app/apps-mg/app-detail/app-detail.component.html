@@ -1,0 +1,174 @@
+<div class="row row-split">
+  <div class="col-md-4 col-sm-6 app-show-div">
+    <img class="app-img" src="{{productInfo.DisplayIcon}}">
+  </div>
+  <div class="col-md-4 col-sm-6 app-show-div">
+    <h2 class="app-name">{{productInfo.DisplayName}}</h2>
+    <h5>{{productInfo.Developer}}</h5>
+    <div class="app-rate">
+      <rating [(ngModel)]="aveStar" [readonly]="true"></rating>{{aveStar}}分 ( {{commentCount}} )
+    </div>
+    <!-- <button *ngIf="!isAppObtained && isLogined" type="button" class="btn btn-default btn-app">获取应用</button> -->
+    <span *ngIf="isAppObtained">您已经拥有此应用了^_^</span>
+  </div>
+  <div class="col-md-4 col-sm-6 app-show-div">
+    <h2 class="app-name">应用评价</h2>
+    <div class="starNm-big">{{aveStar}}</div>
+    <div class="star-desc ">
+      <rating [(ngModel)]="aveStar" [readonly]="true"></rating>{{commentCount}}条评分
+    </div>
+  </div>
+</div>
+<div class="row row-split">
+  <div class="col-md-6">
+    <h3>应用截图</h3>
+    <hr>
+    <md-grid-list cols="2">
+      <md-grid-tile>
+        <img *ngIf="appScreensUrl[0]" class="app-pictures" src="{{appScreensUrl[0]}}">
+        <img *ngIf="!appScreensUrl[0]" class="app-pictures" src="../../../assets/imgs/noimg2.png">
+      </md-grid-tile>
+      <md-grid-tile>
+        <img *ngIf="appScreensUrl[1]" class="app-pictures" src="{{appScreensUrl[1]}}">
+        <img *ngIf="!appScreensUrl[1]" class="app-pictures" src="../../../assets/imgs/noimg.png">
+      </md-grid-tile>
+      <md-grid-tile>
+        <img *ngIf="appScreensUrl[2]" class="app-pictures" src="{{appScreensUrl[2]}}">
+        <img *ngIf="!appScreensUrl[2]" class="app-pictures" src="../../../assets/imgs/noimg2.png">
+      </md-grid-tile>
+      <md-grid-tile>
+        <img *ngIf="appScreensUrl[3]" class="app-pictures" src="{{appScreensUrl[3]}}">
+        <img *ngIf="!appScreensUrl[3]" class="app-pictures" src="../../../assets/imgs/noimg.png">
+      </md-grid-tile>
+    </md-grid-list>
+  </div>
+  <div class="col-md-6">
+    <h3>功能介绍</h3>
+    <hr>
+    <div class="app-intro">
+      {{productInfo.Description}}
+      <!--<ul>
+        <li>支持关联计划及实际进度的4D模拟</li>
+        <li>支持显示相关构件的颜色渲染</li>
+        <li>支持关联计划及实际进度的4D模拟</li>
+        <li>支持显示相关构件的颜色渲染</li>
+      </ul>-->
+    </div>
+    <h3>设备支持</h3>
+    <hr>
+    <div class="app-intro">
+      <div class="row">
+        <div class="col-xs-3">
+          <img src="../../../assets/imgs/pc.png">
+        </div>
+        <div class="col-xs-3">
+          <img src="../../../assets/imgs/web.png">
+        </div>
+        <div class="col-xs-3">
+          <img src="../../../assets/imgs/ios.png">
+        </div>
+        <div class="col-xs-3">
+          <img src="../../../assets/imgs/android.png">
+        </div>
+      </div>
+    </div>
+    <h3>其他信息</h3>
+    <hr>
+    <div class="app-intro">
+      <div class="row">
+        <div class="col-xs-3">
+          <h4>发布者</h4> {{productInfo.Developer}}
+        </div>
+        <div class="col-xs-3">
+          <h4>发布时间</h4> {{productInfo.PublishDate | date:"yyyy-MM-dd"}}
+        </div>
+        <div class="col-xs-3">
+          <h4>下载次数</h4> {{productInfo.DownloadCount}} 次
+        </div>
+        <div class="col-xs-3">
+          <h4>安装包大小</h4>{{fileSize}}KB
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row row-split" *ngIf="isLogined" novalidate>
+  <form #form="ngForm" (ngSubmit)="form.form.valid && addComment()" role="form">
+    <div class="col-sm-12">
+      <h3>撰写评论</h3>
+      <hr>
+      <div class="app-group ">
+        <div class="row form-group">
+          <div class="col-sm-1">星级</div>
+          <div class="col-sm-3">
+            <rating [(ngModel)]="commentPost.Star" name="Star" [max]="max" #cStar="ngModel" [readonly]="isReadonly" (onHover)="hoveringOver($event)"></rating>
+          </div>
+        </div>
+        <div class="row form-group" [ngClass]="{ 'has-error':form.submitted && !cTitle.valid }">
+          <div class="col-sm-1">标题</div>
+          <div class="col-sm-4">
+            <input required class="form-control" type="text" class="form-control" placeholder="" name="cTitle" #cTitle="ngModel" [(ngModel)]="commentPost.Title">
+            <div *ngIf="form.submitted && !cTitle.valid" class="text-danger">评论标题不能为空！</div>
+          </div>
+        </div>
+        <div class="row form-group" [ngClass]="{ 'has-error': form.submitted && !cContent.valid }">
+          <div class="col-sm-1">内容</div>
+          <div class="col-sm-8">
+            <textarea required minlength="5" maxlength="100" class="form-control" rows="5" placeholder="" name="cContent" #cContent="ngModel"
+              [(ngModel)]="commentPost.Content"></textarea>
+            <div *ngIf="form.submitted && !cContent.valid" class="text-danger">请输入5-100个字符。</div>
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-8">
+            <button type="submit" [disabled]="isAdding" class="btn btn-default">发表评论</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- 评论区域 -->
+<!-- <div class="row row-split">
+  <div class="col-sm-2">
+    <h3>应用评价</h3>
+    <hr>
+    <div class="starNm-big">{{aveStar}}</div>
+    <div class="star-desc ">
+      <rating [(ngModel)]="aveStar" [readonly]="true"></rating>{{commentCount}}条评分
+    </div>
+    <div class="col-sm-10"> -->
+<!-- 星条控件-->
+<!-- </div>
+  </div>
+</div>  -->
+
+<div class="row" *ngIf="isExistCts">
+  <div class="col-sm-12">
+    <h3>评价列表</h3>
+    <hr>
+    <!--<h4>排序依据</h4>-->
+    <!--<select>
+        <option >最高评分</option>
+        <option >最低评分</option>
+    </select>-->
+  </div>
+</div>
+<!--评论列表-->
+<h3>评价列表</h3>
+<hr>
+<div class="row app-comment" *ngFor="let comment of userComments">
+  <div class="col-xs-2">
+    <rating class="comment-star" [(ngModel)]="comment.Star" [readonly]=" true "></rating>
+    <div class="comment-time ">{{comment.CreateDate | date:"yyyy-MM-dd "}}</div>
+    <div class="comment-user ">{{comment.CreateUserName}}</div>
+  </div>
+  <div class="col-xs-10 ">
+    <div class="comment-title">{{comment.Title}}</div>
+    <div class="comment-content"><small>{{comment.Content}}</small></div>
+  </div>
+
+</div>
